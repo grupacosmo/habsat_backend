@@ -1,4 +1,4 @@
-package pl.edu.pk.cosmo.habsatbackend.habsat_backend;
+package pl.edu.pk.cosmo.habsatbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

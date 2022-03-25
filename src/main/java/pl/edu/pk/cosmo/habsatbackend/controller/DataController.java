@@ -25,4 +25,10 @@ public class DataController {
     public List<Data> findAll() {
         return dataService.findAll();
     }
+
+    @DeleteMapping("/~deleteAll")
+    public void delete() {
+        dataService.deleteAll();
+    }
+
 }

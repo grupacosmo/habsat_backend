@@ -74,4 +74,9 @@ public class DataService {
         data.setAccelerationZ(random.nextDouble());
         return data;
     }
+
+    public void deleteAll() {
+        jdbcTemplate.execute("ALTER TABLE DATA ALTER COLUMN ID RESTART WITH 1");
+        dataRepository.deleteAll();
+    }
 }

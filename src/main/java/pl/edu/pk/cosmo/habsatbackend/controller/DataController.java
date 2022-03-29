@@ -7,7 +7,7 @@ import pl.edu.pk.cosmo.habsatbackend.service.DataService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/data-frame`")
+@RequestMapping("/data-frame")
 public class DataController {
 
     final DataService dataService;
@@ -21,7 +21,7 @@ public class DataController {
         dataService.save(data);
     }
 
-    @GetMapping("/all")
+    @GetMapping()
     public List<Data> findAll() {
         return dataService.findAll();
     }

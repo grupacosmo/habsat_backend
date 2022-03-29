@@ -1,3 +1,0 @@
-[submodule "habsat-fronted"]
-        path = habsat-frontend
-        url = git@github.com:grupacosmo/habsat-frontend.git

@@ -60,7 +60,7 @@ public class DataService {
 //        data.setAltitude(random.nextDouble());
 //        data.setTemperature(random.nextDouble());
 //        data.setLongitude(random.nextDouble()*100 + ew[random.nextInt(ew.length)]);
-//        data.setLatitude(random.nextDouble()*100 + ns[random.nextInt(ns.length)]);
+//        data.setLatitude(qrandom.nextDouble()*100 + ns[random.nextInt(ns.length)]);
 //        return data;
 //    }
 }

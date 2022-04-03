@@ -1,4 +1,4 @@
-GET https://eu1.cloud.thethings.network/api/v3/as/applications/lora-e5-v2/packages/storage/uplink_message
+DELETE localhost:8080/data-frame/~~deleteAll__webdev__access_265
 Accept: application/json
 
 ###

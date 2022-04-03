@@ -85,22 +85,22 @@ public class MQTTConfiguration {
                 ArrayList<String> dataArr = new ArrayList<>(List.of(mess.split("\"text\":\"")));
                 String data = dataArr.get(1).split("\"")[0];
                 ArrayList<String> mainData = new ArrayList<>(List.of(data.split(";")));
-                System.out.println(mainData);
+
                 /*
                 "time":"2022-04-03T12:34:16.373069Z"
                 "rssi":-51
                 "decoded_payload":{"text":"209.85;50.08;20.03;1.22;18.10"}
                  */
                 final Data dataToDb = new Data();
-                dataToDb.setAltitude(Double.valueOf(mainData.get(0).substring(1)));
-                dataToDb.setTemperature(Double.valueOf(mainData.get(1)));
-                dataToDb.setLatitude(Double.valueOf(mainData.get(2)));
-                dataToDb.setLongitude(Double.valueOf(mainData.get(3)));
-                dataToDb.setSpeed(Double.valueOf(mainData.get(4).substring(0, mainData.get(4).length()-1)));
+                dataToDb.setAltitude(Double.valueOf(mainData.get(0).substring(0)));
+                dataToDb.setLatitude(Double.valueOf(mainData.get(1)));
+                dataToDb.setLongitude(Double.valueOf(mainData.get(2)));
+                dataToDb.setSpeed(Double.valueOf(mainData.get(3).substring(0, mainData.get(4).length()-1)));
+                dataToDb.setTemperature(Double.valueOf(mainData.get(4)));
                 dataToDb.setRssi(Double.valueOf(rssi));
                 dataToDb.setTime(LocalDateTime.now());
 
-
+                System.out.println(dataToDb);
                 dataService.sendFrame(dataToDb);
             }
         };

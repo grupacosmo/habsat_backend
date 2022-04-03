@@ -26,7 +26,7 @@ public class DataController {
         return dataService.findAll();
     }
 
-    @DeleteMapping("/~deleteAll")
+    @DeleteMapping("/~~deleteAll__webdev__access_265")
     public void delete() {
         dataService.deleteAll();
     }

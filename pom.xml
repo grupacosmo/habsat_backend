@@ -74,8 +74,26 @@
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>com.github.eirslett</groupId>
+            <artifactId>frontend-maven-plugin</artifactId>
+            <version>1.12.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.thethingsnetwork</groupId>
+            <artifactId>data-mqtt</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-mqtt</artifactId>
+            <version>5.5.10</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -137,6 +155,19 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+<!--                    <webResources>-->
+<!--                        <resource>-->
+<!--                            <directory>habsat-frontend/build</directory>-->
+<!--                        </resource>-->
+<!--                    </webResources>-->
+                </configuration>
             </plugin>
         </plugins>
     </build>

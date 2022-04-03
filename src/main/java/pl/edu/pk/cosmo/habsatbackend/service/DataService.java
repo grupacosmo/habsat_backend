@@ -4,14 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import pl.edu.pk.cosmo.habsatbackend.entity.Data;
 import pl.edu.pk.cosmo.habsatbackend.repository.DataRepository;
 
 import javax.transaction.Transactional;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Random;
 
@@ -33,23 +30,15 @@ public class DataService {
     }
 
     @Transactional
-    @Scheduled(fixedDelay = 1000 * 10/* Seconds */)
-    public void sendTestFrame() {
-        final Data data = generateRandomData();
-        jdbcTemplate.update("INSERT INTO DATA(TIME, SYSTEM_TIME, FIX, QUALITY_LOCATION, SPEED, ALTITUDE, SATELLITES, TEMPERATURE, PRESSURE, ACCELERATIONX, ACCELERATIONY, ACCELERATIONZ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-
-                Timestamp.valueOf(LocalDateTime.now()),
-                Timestamp.valueOf(LocalDateTime.now()),
-                data.getFix(),
-                data.getQualityLocation(),
+    public void sendFrame(final Data data) {
+        jdbcTemplate.update("INSERT INTO DATA(SPEED, ALTITUDE, LONGITUDE, LATITUDE,TEMPERATURE, TIME, RSSI) VALUES (?, ?, ?, ?, ?, ?, ?)",
                 data.getSpeed(),
                 data.getAltitude(),
-                data.getSatellites(),
+                data.getLongitude(),
+                data.getLatitude(),
                 data.getTemperature(),
-                data.getPressure(),
-                data.getAccelerationX(),
-                data.getAccelerationY(),
-                data.getAccelerationZ());
+                data.getTime(),
+                data.getRssi());
         simpMessagingTemplate.convertAndSend("/data/ws", data);
     }
 
@@ -57,26 +46,22 @@ public class DataService {
         return dataRepository.findAll();
     }
 
-    private Data generateRandomData() {
-        final Random random = new Random();
-        final Data data = new Data();
-        data.setTime(LocalDateTime.now());
-        data.setSystemTime(LocalDateTime.now());
-        data.setFix(random.nextDouble());
-        data.setQualityLocation(random.nextDouble());
-        data.setSpeed(random.nextDouble());
-        data.setPressure(random.nextDouble());
-        data.setAltitude(random.nextDouble());
-        data.setSatellites(random.nextInt());
-        data.setTemperature(random.nextDouble());
-        data.setAccelerationX(random.nextDouble());
-        data.setAccelerationY(random.nextDouble());
-        data.setAccelerationZ(random.nextDouble());
-        return data;
-    }
-
     public void deleteAll() {
         jdbcTemplate.execute("ALTER TABLE DATA ALTER COLUMN ID RESTART WITH 1");
         dataRepository.deleteAll();
+    }
+
+    // Only for previous purposes
+    private Data generateRandomData() {
+        final Random random = new Random();
+        final Data data = new Data();
+        String[] ns = {"N", "S"};
+        String[] ew = {"E", "W"};
+        data.setSpeed(random.nextDouble());
+        data.setAltitude(random.nextDouble());
+        data.setTemperature(random.nextDouble());
+        data.setLongitude(random.nextDouble()*100 + ew[random.nextInt(ew.length)]);
+        data.setLatitude(random.nextDouble()*100 + ns[random.nextInt(ns.length)]);
+        return data;
     }
 }

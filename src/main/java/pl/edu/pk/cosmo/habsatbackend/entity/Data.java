@@ -12,38 +12,23 @@ public class Data {
     Long id;
 
     @Column(nullable = false)
-    LocalDateTime time;
-
-    @Column(nullable = false)
-    LocalDateTime systemTime;
-
-    @Column(nullable = false)
-    Double fix;
-
-    @Column(nullable = false)
-    Double qualityLocation;
-
-    @Column(nullable = false)
     Double speed;
 
     @Column(nullable = false)
-    double altitude;
+    Double altitude;
 
     @Column(nullable = false)
-    int satellites;
+    String longitude;
 
     @Column(nullable = false)
-    double temperature;
+    String latitude;
 
     @Column(nullable = false)
-    double pressure;
+    Double temperature;
 
     @Column(nullable = false)
-    double accelerationX;
+    LocalDateTime time;
 
     @Column(nullable = false)
-    double accelerationY;
-
-    @Column(nullable = false)
-    double accelerationZ;
+    Double rssi;
 }

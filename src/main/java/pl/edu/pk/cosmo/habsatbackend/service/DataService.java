@@ -10,7 +10,6 @@ import pl.edu.pk.cosmo.habsatbackend.repository.DataRepository;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Random;
 
 @Service
 public class DataService {
@@ -52,16 +51,16 @@ public class DataService {
     }
 
     // Only for previous purposes
-    private Data generateRandomData() {
-        final Random random = new Random();
-        final Data data = new Data();
-        String[] ns = {"N", "S"};
-        String[] ew = {"E", "W"};
-        data.setSpeed(random.nextDouble());
-        data.setAltitude(random.nextDouble());
-        data.setTemperature(random.nextDouble());
-        data.setLongitude(random.nextDouble()*100 + ew[random.nextInt(ew.length)]);
-        data.setLatitude(random.nextDouble()*100 + ns[random.nextInt(ns.length)]);
-        return data;
-    }
+//    private Data generateRandomData() {
+//        final Random random = new Random();
+//        final Data data = new Data();
+//        String[] ns = {"N", "S"};
+//        String[] ew = {"E", "W"};
+//        data.setSpeed(random.nextDouble());
+//        data.setAltitude(random.nextDouble());
+//        data.setTemperature(random.nextDouble());
+//        data.setLongitude(random.nextDouble()*100 + ew[random.nextInt(ew.length)]);
+//        data.setLatitude(random.nextDouble()*100 + ns[random.nextInt(ns.length)]);
+//        return data;
+//    }
 }

@@ -94,8 +94,8 @@ public class MQTTConfiguration {
                 final Data dataToDb = new Data();
                 dataToDb.setAltitude(Double.valueOf(mainData.get(0).substring(1)));
                 dataToDb.setTemperature(Double.valueOf(mainData.get(1)));
-                dataToDb.setLatitude(mainData.get(2));
-                dataToDb.setLongitude(mainData.get(3));
+                dataToDb.setLatitude(Double.valueOf(mainData.get(2)));
+                dataToDb.setLongitude(Double.valueOf(mainData.get(3)));
                 dataToDb.setSpeed(Double.valueOf(mainData.get(4).substring(0, mainData.get(4).length()-1)));
                 dataToDb.setRssi(Double.valueOf(rssi));
                 dataToDb.setTime(LocalDateTime.now());

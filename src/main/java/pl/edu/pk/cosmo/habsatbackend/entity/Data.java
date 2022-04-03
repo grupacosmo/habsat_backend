@@ -18,10 +18,10 @@ public class Data {
     Double altitude;
 
     @Column(nullable = false)
-    String longitude;
+    Double longitude;
 
     @Column(nullable = false)
-    String latitude;
+    Double latitude;
 
     @Column(nullable = false)
     Double temperature;

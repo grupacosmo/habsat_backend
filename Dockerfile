@@ -1,15 +1,5 @@
-FROM maven:3-openjdk-17-slim as BUILDER
+FROM openjdk:17-slim
+MAINTAINER cosmopk
 ARG VERSION=0.0.1-SNAPSHOT
-WORKDIR /build/
-COPY pom.xml /build/
-COPY src /build/src
-
-
-RUN mvn clean package
-COPY target/habsat_backend-${VERSION}.jar target/application.jar
-
-FROM eclipse-temurin:17.0.1_12-jre-focal
-WORKDIR /app/
-
-COPY --from=BUILDER /build/target/application.jar /app/
-CMD java -jar /app/application.jar
+COPY target/habsat_backend-${VERSION}.jar habsat_backend.jar
+ENTRYPOINT ["java", "-jar", "/habsat_backend.jar"]

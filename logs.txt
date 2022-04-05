@@ -1,0 +1,562 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36mpl.edu.pk.cosmo.habsatbackend:habsat_backend[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding habsat_backend 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:2.6.5:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mhabsat_backend[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mhibernate-enhance-maven-plugin:5.6.7.Final:enhance[m [1m(enhance)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Starting Hibernate enhancement for classes on /home/ubuntu/habsat_backend/target/classes
+Apr 05, 2022 1:19:38 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.7.Final
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/habsat_backend/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:2.6.5:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mhabsat_backend[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.6.5:run[m [1m(default-cli)[m @ [36mhabsat_backend[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+2022-04-05 13:19:40.532  INFO 8291 --- [           main] o.s.nativex.NativeListener               : AOT mode disabled
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.5)
+
+2022-04-05 13:19:40.615  INFO 8291 --- [           main] p.e.p.c.h.HabsatBackendApplication       : Starting HabsatBackendApplication using Java 11.0.14.1 on vps-74f8fd94 with PID 8291 (/home/ubuntu/habsat_backend/target/classes started by root in /home/ubuntu/habsat_backend)
+2022-04-05 13:19:40.616  INFO 8291 --- [           main] p.e.p.c.h.HabsatBackendApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-05 13:19:41.462  INFO 8291 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-05 13:19:41.524  INFO 8291 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-04-05 13:19:41.697  INFO 8291 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-04-05 13:19:41.710  INFO 8291 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-04-05 13:19:42.007  INFO 8291 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-05 13:19:42.013  INFO 8291 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-05 13:19:42.346  INFO 8291 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-05 13:19:42.355  INFO 8291 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-05 13:19:42.356  INFO 8291 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-05 13:19:42.459  INFO 8291 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-05 13:19:42.459  INFO 8291 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1734 ms
+2022-04-05 13:19:42.691  INFO 8291 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-05 13:19:42.815  INFO 8291 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-05 13:19:42.827  INFO 8291 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-04-05 13:19:42.828  INFO 8291 --- [           main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:file:./db (H2 1.4)
+2022-04-05 13:19:42.908  INFO 8291 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.042s)
+2022-04-05 13:19:42.971  INFO 8291 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 3
+2022-04-05 13:19:42.977  INFO 8291 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2022-04-05 13:19:43.092  INFO 8291 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-05 13:19:43.126  INFO 8291 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-05 13:19:43.164  INFO 8291 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-05 13:19:43.275  INFO 8291 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-05 13:19:43.590  INFO 8291 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-05 13:19:43.597  INFO 8291 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-05 13:19:44.179  WARN 8291 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-05 13:19:45.563  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-04-05 13:19:45.563  INFO 8291 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2022-04-05 13:19:45.563  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:MQTTConfiguration.handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'MQTTConfiguration.handler.serviceActivator'
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:MQTTConfiguration.mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+2022-04-05 13:19:45.564  INFO 8291 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'MQTTConfiguration.mqttOutbound.serviceActivator'
+2022-04-05 13:19:45.805  INFO 8291 --- [           main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inbound'; defined in: 'class path resource [pl/edu/pk/cosmo/habsatbackend/configuration/MQTTConfiguration.class]'; from source: 'pl.edu.pk.cosmo.habsatbackend.configuration.MQTTConfiguration.inbound()'
+2022-04-05 13:19:45.819  INFO 8291 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-05 13:19:45.820  INFO 8291 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2022-04-05 13:19:45.820  INFO 8291 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6a95c2f6]]
+2022-04-05 13:19:45.821  INFO 8291 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2022-04-05 13:19:45.837  INFO 8291 --- [           main] p.e.p.c.h.HabsatBackendApplication       : Started HabsatBackendApplication in 5.725 seconds (JVM running for 6.153)
+2022-04-05 13:19:48.542  INFO 8291 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-05 13:19:48.543  INFO 8291 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-05 13:19:48.545  INFO 8291 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-05 13:20:44.146  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-04-05 13:50:44.146  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+Data(id=null, speed=0.0, altitude=299.04, longitude=0.0, latitude=0.0, temperature=23.19, time=2022-04-05T13:56:41.960732, rssi=-54.0)
+Data(id=null, speed=0.0, altitude=298.96, longitude=0.0, latitude=0.0, temperature=23.2, time=2022-04-05T13:57:40.292888, rssi=-47.0)
+Data(id=null, speed=0.0, altitude=298.85, longitude=0.0, latitude=0.0, temperature=23.15, time=2022-04-05T13:58:41.012330, rssi=-53.0)
+Data(id=null, speed=0.0, altitude=298.65, longitude=0.0, latitude=0.0, temperature=23.11, time=2022-04-05T13:59:41.680566, rssi=-54.0)
+Data(id=null, speed=0.0, altitude=298.58, longitude=0.0, latitude=0.0, temperature=23.08, time=2022-04-05T14:00:42.463410, rssi=-54.0)
+Data(id=null, speed=0.0, altitude=298.31, longitude=0.0, latitude=0.0, temperature=23.08, time=2022-04-05T14:01:43.332862, rssi=-51.0)
+Data(id=null, speed=0.0, altitude=298.54, longitude=0.0, latitude=0.0, temperature=23.09, time=2022-04-05T14:02:44.242369, rssi=-51.0)
+Data(id=null, speed=0.0, altitude=298.64, longitude=0.0, latitude=0.0, temperature=23.44, time=2022-04-05T14:07:07.859022, rssi=-51.0)
+Data(id=null, speed=0.0, altitude=298.43, longitude=0.0, latitude=0.0, temperature=23.44, time=2022-04-05T14:08:06.352315, rssi=-53.0)
+Data(id=null, speed=0.02, altitude=298.03, longitude=20.0248, latitude=50.0799, temperature=23.44, time=2022-04-05T14:09:07.097700, rssi=-55.0)
+Data(id=null, speed=0.15, altitude=298.44, longitude=20.0248, latitude=50.08, temperature=23.46, time=2022-04-05T14:10:07.649392, rssi=-52.0)
+Data(id=null, speed=0.17, altitude=299.08, longitude=20.0248, latitude=50.0801, temperature=23.49, time=2022-04-05T14:11:08.538988, rssi=-52.0)
+Data(id=null, speed=0.05, altitude=298.64, longitude=20.0248, latitude=50.08, temperature=23.49, time=2022-04-05T14:12:09.442956, rssi=-52.0)
+Data(id=null, speed=0.0, altitude=299.45, longitude=20.0248, latitude=50.0801, temperature=23.59, time=2022-04-05T14:13:10.392209, rssi=-55.0)
+Data(id=null, speed=0.16, altitude=300.02, longitude=20.0248, latitude=50.0801, temperature=23.74, time=2022-04-05T14:14:11.291748, rssi=-51.0)
+Data(id=null, speed=0.03, altitude=299.49, longitude=20.0248, latitude=50.0801, temperature=23.91, time=2022-04-05T14:15:12.229924, rssi=-52.0)
+Data(id=null, speed=0.17, altitude=299.02, longitude=20.0248, latitude=50.0801, temperature=24.01, time=2022-04-05T14:16:13.132387, rssi=-55.0)
+Data(id=null, speed=0.15, altitude=299.79, longitude=20.0248, latitude=50.08, temperature=24.04, time=2022-04-05T14:17:14.050314, rssi=-55.0)
+Data(id=null, speed=0.09, altitude=299.55, longitude=20.0248, latitude=50.08, temperature=24.13, time=2022-04-05T14:18:14.929898, rssi=-55.0)
+Data(id=null, speed=0.05, altitude=299.35, longitude=20.0247, latitude=50.08, temperature=24.08, time=2022-04-05T14:19:15.845011, rssi=-53.0)
+Data(id=null, speed=0.08, altitude=299.16, longitude=20.0247, latitude=50.0799, temperature=24.09, time=2022-04-05T14:20:16.773235, rssi=-54.0)
+2022-04-05 14:20:44.147  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 24 total, 0 closed abnormally (0 connect failure, 0 send limit, 4 transport error)], stompSubProtocol[processed CONNECT(24)-CONNECTED(24)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 207], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 115], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 502]
+Data(id=null, speed=0.04, altitude=299.83, longitude=20.0247, latitude=50.0799, temperature=24.11, time=2022-04-05T14:21:17.654923, rssi=-55.0)
+Data(id=null, speed=0.03, altitude=299.37, longitude=20.0248, latitude=50.0799, temperature=24.17, time=2022-04-05T14:22:18.567652, rssi=-53.0)
+Data(id=null, speed=0.02, altitude=299.58, longitude=20.0248, latitude=50.08, temperature=24.16, time=2022-04-05T14:23:19.465611, rssi=-53.0)
+Data(id=null, speed=0.08, altitude=299.66, longitude=20.0248, latitude=50.0801, temperature=24.26, time=2022-04-05T14:24:20.398409, rssi=-53.0)
+Data(id=null, speed=0.11, altitude=299.9, longitude=20.0248, latitude=50.0802, temperature=24.33, time=2022-04-05T14:25:21.288226, rssi=-55.0)
+Data(id=null, speed=0.05, altitude=300.03, longitude=20.0248, latitude=50.0801, temperature=24.02, time=2022-04-05T14:26:22.214192, rssi=-55.0)
+Data(id=null, speed=0.29, altitude=300.34, longitude=20.0248, latitude=50.08, temperature=24.18, time=2022-04-05T14:27:23.139983, rssi=-54.0)
+Data(id=null, speed=0.5, altitude=300.82, longitude=20.0248, latitude=50.0801, temperature=24.24, time=2022-04-05T14:28:24.076903, rssi=-55.0)
+Data(id=null, speed=0.22, altitude=300.76, longitude=20.0248, latitude=50.0799, temperature=24.25, time=2022-04-05T14:29:25.014574, rssi=-54.0)
+Data(id=null, speed=0.1, altitude=300.77, longitude=20.0247, latitude=50.0799, temperature=24.26, time=2022-04-05T14:30:25.936776, rssi=-53.0)
+Data(id=null, speed=0.27, altitude=300.73, longitude=20.0248, latitude=50.0799, temperature=24.36, time=2022-04-05T14:31:26.848890, rssi=-53.0)
+Data(id=null, speed=0.2, altitude=300.94, longitude=20.0247, latitude=50.08, temperature=24.35, time=2022-04-05T14:32:27.766844, rssi=-57.0)
+2022-04-05 14:33:02.468  INFO 8291 --- [nio-8080-exec-3] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 212627 ms. Closing XhrStreamingSockJsSession[id=jh5bjtyq].
+2022-04-05 14:33:02.469  INFO 8291 --- [nio-8080-exec-3] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 118474 ms. Closing EventSourceStreamingSockJsSession[id=s3p530f0].
+2022-04-05 14:33:02.469  INFO 8291 --- [nio-8080-exec-3] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 121407 ms. Closing XhrStreamingSockJsSession[id=2zgo3sdd].
+Data(id=null, speed=0.1, altitude=300.86, longitude=20.0248, latitude=50.08, temperature=24.41, time=2022-04-05T14:33:28.644701, rssi=-57.0)
+Data(id=null, speed=0.6, altitude=300.58, longitude=20.0247, latitude=50.08, temperature=24.44, time=2022-04-05T14:34:29.561682, rssi=-57.0)
+Data(id=null, speed=0.15, altitude=300.46, longitude=20.0248, latitude=50.0801, temperature=24.49, time=2022-04-05T14:35:30.456551, rssi=-57.0)
+Data(id=null, speed=0.04, altitude=300.2, longitude=20.0248, latitude=50.0801, temperature=24.51, time=2022-04-05T14:36:31.361119, rssi=-57.0)
+Data(id=null, speed=0.06, altitude=300.2, longitude=20.0248, latitude=50.08, temperature=24.57, time=2022-04-05T14:37:32.293640, rssi=-57.0)
+Data(id=null, speed=0.15, altitude=300.34, longitude=20.0248, latitude=50.08, temperature=24.56, time=2022-04-05T14:38:33.190492, rssi=-55.0)
+Data(id=null, speed=0.03, altitude=300.09, longitude=20.0248, latitude=50.08, temperature=24.6, time=2022-04-05T14:39:34.115790, rssi=-55.0)
+Data(id=null, speed=0.12, altitude=300.91, longitude=20.0248, latitude=50.0801, temperature=24.61, time=2022-04-05T14:40:34.975866, rssi=-53.0)
+Data(id=null, speed=0.13, altitude=300.42, longitude=20.0248, latitude=50.0801, temperature=24.52, time=2022-04-05T14:41:35.859740, rssi=-54.0)
+Data(id=null, speed=0.23, altitude=301.2, longitude=20.0248, latitude=50.08, temperature=24.52, time=2022-04-05T14:42:36.787072, rssi=-57.0)
+Data(id=null, speed=0.02, altitude=300.92, longitude=20.0248, latitude=50.0801, temperature=24.55, time=2022-04-05T14:43:37.637433, rssi=-54.0)
+Data(id=null, speed=0.96, altitude=300.43, longitude=20.0248, latitude=50.0802, temperature=24.58, time=2022-04-05T14:44:38.531715, rssi=-55.0)
+Data(id=null, speed=0.44, altitude=301.06, longitude=20.0247, latitude=50.08, temperature=24.56, time=2022-04-05T14:45:39.395822, rssi=-55.0)
+Data(id=null, speed=0.1, altitude=300.77, longitude=20.0248, latitude=50.0801, temperature=24.6, time=2022-04-05T14:46:40.294377, rssi=-55.0)
+Data(id=null, speed=0.12, altitude=301.3, longitude=20.0248, latitude=50.08, temperature=24.49, time=2022-04-05T14:47:41.178774, rssi=-54.0)
+Data(id=null, speed=0.08, altitude=301.02, longitude=20.0249, latitude=50.08, temperature=24.47, time=2022-04-05T14:48:42.081661, rssi=-54.0)
+Data(id=null, speed=0.24, altitude=301.16, longitude=20.0248, latitude=50.08, temperature=24.45, time=2022-04-05T14:49:42.975398, rssi=-55.0)
+Data(id=null, speed=0.03, altitude=301.43, longitude=20.025, latitude=50.08, temperature=24.43, time=2022-04-05T14:50:43.855777, rssi=-55.0)
+2022-04-05 14:50:44.147  INFO 8291 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 46 total, 3 closed abnormally (3 connect failure, 0 send limit, 6 transport error)], stompSubProtocol[processed CONNECT(42)-CONNECTED(42)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 381], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 255], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 1063]
+Data(id=null, speed=0.06, altitude=300.93, longitude=20.0248, latitude=50.0801, temperature=24.41, time=2022-04-05T14:51:44.758371, rssi=-57.0)
+2022-04-05 16:51:23.593 ERROR 8291 --- [T Rec: serverIn] .m.i.MqttPahoMessageDrivenChannelAdapter : Lost connection: Connection lost; retrying...
+Data(id=null, speed=0.34, altitude=300.63, longitude=20.0249, latitude=50.0801, temperature=24.38, time=2022-04-05T16:51:53.419145, rssi=-61.0)
+Data(id=null, speed=0.01, altitude=301.03, longitude=20.0249, latitude=50.08, temperature=24.31, time=2022-04-05T16:52:54.317004, rssi=-61.0)
+Data(id=null, speed=0.18, altitude=300.95, longitude=20.0249, latitude=50.08, temperature=24.33, time=2022-04-05T16:53:55.226848, rssi=-55.0)
+Data(id=null, speed=0.14, altitude=300.7, longitude=20.025, latitude=50.08, temperature=24.3, time=2022-04-05T16:54:56.120486, rssi=-59.0)
+Data(id=null, speed=0.04, altitude=300.63, longitude=20.0249, latitude=50.08, temperature=24.33, time=2022-04-05T16:55:57.043103, rssi=-61.0)
+Data(id=null, speed=0.41, altitude=301.06, longitude=20.0249, latitude=50.08, temperature=24.31, time=2022-04-05T16:56:57.945201, rssi=-61.0)
+Data(id=null, speed=0.15, altitude=301.27, longitude=20.0249, latitude=50.08, temperature=24.38, time=2022-04-05T16:57:58.832482, rssi=-59.0)
+Data(id=null, speed=0.35, altitude=300.32, longitude=20.0249, latitude=50.08, temperature=24.38, time=2022-04-05T16:58:59.722472, rssi=-59.0)
+Data(id=null, speed=0.27, altitude=300.25, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T17:00:00.618156, rssi=-59.0)
+Data(id=null, speed=0.34, altitude=301.02, longitude=20.0249, latitude=50.08, temperature=24.41, time=2022-04-05T17:01:01.550302, rssi=-60.0)
+Data(id=null, speed=0.54, altitude=300.86, longitude=20.0249, latitude=50.08, temperature=24.43, time=2022-04-05T17:02:02.436328, rssi=-58.0)
+Data(id=null, speed=0.74, altitude=300.82, longitude=20.0249, latitude=50.0801, temperature=24.42, time=2022-04-05T17:03:03.347673, rssi=-59.0)
+Data(id=null, speed=0.13, altitude=300.59, longitude=20.0249, latitude=50.08, temperature=24.38, time=2022-04-05T17:04:04.263824, rssi=-55.0)
+Data(id=null, speed=0.08, altitude=300.92, longitude=20.0248, latitude=50.0801, temperature=24.46, time=2022-04-05T17:05:05.168984, rssi=-59.0)
+Data(id=null, speed=0.1, altitude=300.43, longitude=20.0248, latitude=50.08, temperature=24.46, time=2022-04-05T17:06:06.072251, rssi=-61.0)
+Data(id=null, speed=0.04, altitude=301.11, longitude=20.0248, latitude=50.0801, temperature=24.43, time=2022-04-05T17:07:06.967828, rssi=-56.0)
+Data(id=null, speed=0.54, altitude=300.98, longitude=20.0248, latitude=50.0801, temperature=24.49, time=2022-04-05T17:08:07.911871, rssi=-60.0)
+Data(id=null, speed=0.37, altitude=301.2, longitude=20.0248, latitude=50.0801, temperature=24.44, time=2022-04-05T17:09:08.770392, rssi=-60.0)
+Data(id=null, speed=0.2, altitude=300.79, longitude=20.0248, latitude=50.0801, temperature=24.5, time=2022-04-05T17:10:09.671074, rssi=-57.0)
+Data(id=null, speed=0.59, altitude=300.77, longitude=20.0249, latitude=50.0801, temperature=24.5, time=2022-04-05T17:11:10.581461, rssi=-56.0)
+Data(id=null, speed=0.23, altitude=300.83, longitude=20.0248, latitude=50.0801, temperature=24.51, time=2022-04-05T17:12:11.466110, rssi=-60.0)
+Data(id=null, speed=0.14, altitude=300.42, longitude=20.0248, latitude=50.0801, temperature=24.59, time=2022-04-05T17:13:12.377259, rssi=-63.0)
+Data(id=null, speed=0.33, altitude=300.02, longitude=20.0248, latitude=50.08, temperature=24.57, time=2022-04-05T17:14:13.271721, rssi=-63.0)
+Data(id=null, speed=0.07, altitude=299.72, longitude=20.0248, latitude=50.0801, temperature=24.56, time=2022-04-05T17:15:14.164587, rssi=-60.0)
+Data(id=null, speed=0.02, altitude=299.93, longitude=20.0248, latitude=50.0801, temperature=24.56, time=2022-04-05T17:16:15.082517, rssi=-63.0)
+Data(id=null, speed=0.08, altitude=299.7, longitude=20.0248, latitude=50.0801, temperature=24.58, time=2022-04-05T17:17:16.020268, rssi=-61.0)
+Data(id=null, speed=0.33, altitude=299.9, longitude=20.0248, latitude=50.0801, temperature=24.51, time=2022-04-05T17:18:16.939886, rssi=-61.0)
+Data(id=null, speed=0.03, altitude=299.76, longitude=20.0248, latitude=50.0801, temperature=24.54, time=2022-04-05T17:19:17.840294, rssi=-60.0)
+2022-04-05 17:19:51.911  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 50 total, 3 closed abnormally (3 connect failure, 0 send limit, 7 transport error)], stompSubProtocol[processed CONNECT(46)-CONNECTED(46)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 423], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 305], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 2, completed tasks = 1507]
+Data(id=null, speed=0.02, altitude=300.18, longitude=20.0249, latitude=50.08, temperature=24.48, time=2022-04-05T17:20:18.761745, rssi=-63.0)
+Data(id=null, speed=0.25, altitude=299.99, longitude=20.0249, latitude=50.08, temperature=24.52, time=2022-04-05T17:21:19.661754, rssi=-63.0)
+Data(id=null, speed=0.21, altitude=300.31, longitude=20.0249, latitude=50.08, temperature=24.53, time=2022-04-05T17:22:20.653460, rssi=-60.0)
+Data(id=null, speed=0.22, altitude=299.59, longitude=20.0248, latitude=50.08, temperature=24.56, time=2022-04-05T17:23:21.494418, rssi=-61.0)
+Data(id=null, speed=0.29, altitude=299.85, longitude=20.0249, latitude=50.08, temperature=24.56, time=2022-04-05T17:24:22.363999, rssi=-63.0)
+Data(id=null, speed=0.54, altitude=299.88, longitude=20.0249, latitude=50.08, temperature=24.59, time=2022-04-05T17:25:23.278145, rssi=-60.0)
+Data(id=null, speed=0.41, altitude=299.76, longitude=20.0249, latitude=50.08, temperature=24.57, time=2022-04-05T17:26:24.199299, rssi=-63.0)
+Data(id=null, speed=1.27, altitude=299.86, longitude=20.0249, latitude=50.08, temperature=24.63, time=2022-04-05T17:27:25.110576, rssi=-59.0)
+Data(id=null, speed=0.5, altitude=299.57, longitude=20.0251, latitude=50.0798, temperature=24.6, time=2022-04-05T17:28:26.014520, rssi=-60.0)
+Data(id=null, speed=0.42, altitude=299.48, longitude=20.025, latitude=50.08, temperature=24.52, time=2022-04-05T17:29:26.938783, rssi=-63.0)
+Data(id=null, speed=0.2, altitude=299.18, longitude=20.0249, latitude=50.08, temperature=24.55, time=2022-04-05T17:30:27.891617, rssi=-60.0)
+Data(id=null, speed=0.69, altitude=299.69, longitude=20.0248, latitude=50.08, temperature=24.52, time=2022-04-05T17:31:28.733582, rssi=-60.0)
+Data(id=null, speed=0.1, altitude=299.31, longitude=20.0248, latitude=50.08, temperature=24.55, time=2022-04-05T17:32:29.612279, rssi=-63.0)
+Data(id=null, speed=0.15, altitude=299.55, longitude=20.0248, latitude=50.08, temperature=24.54, time=2022-04-05T17:33:30.517731, rssi=-63.0)
+Data(id=null, speed=0.04, altitude=298.98, longitude=20.0249, latitude=50.08, temperature=24.52, time=2022-04-05T17:34:31.406247, rssi=-63.0)
+Data(id=null, speed=0.15, altitude=298.9, longitude=20.0249, latitude=50.0801, temperature=24.51, time=2022-04-05T17:35:32.289424, rssi=-63.0)
+Data(id=null, speed=0.14, altitude=298.98, longitude=20.0248, latitude=50.0801, temperature=24.5, time=2022-04-05T17:36:33.177441, rssi=-63.0)
+Data(id=null, speed=0.28, altitude=298.36, longitude=20.0249, latitude=50.0801, temperature=24.47, time=2022-04-05T17:37:34.079285, rssi=-61.0)
+Data(id=null, speed=0.41, altitude=298.94, longitude=20.0249, latitude=50.0801, temperature=24.48, time=2022-04-05T17:38:35.002613, rssi=-60.0)
+Data(id=null, speed=0.19, altitude=298.6, longitude=20.0249, latitude=50.08, temperature=24.49, time=2022-04-05T17:39:35.876360, rssi=-61.0)
+Data(id=null, speed=0.18, altitude=298.93, longitude=20.0249, latitude=50.0801, temperature=24.42, time=2022-04-05T17:40:36.766781, rssi=-59.0)
+Data(id=null, speed=0.54, altitude=299.07, longitude=20.0248, latitude=50.0801, temperature=24.41, time=2022-04-05T17:41:37.702329, rssi=-61.0)
+Data(id=null, speed=0.07, altitude=298.67, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T17:42:38.614110, rssi=-61.0)
+Data(id=null, speed=0.04, altitude=298.95, longitude=20.0249, latitude=50.08, temperature=24.41, time=2022-04-05T17:43:39.535902, rssi=-59.0)
+Data(id=null, speed=0.17, altitude=299.45, longitude=20.0249, latitude=50.08, temperature=24.43, time=2022-04-05T17:44:40.426446, rssi=-61.0)
+Data(id=null, speed=0.03, altitude=299.24, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T17:45:41.343063, rssi=-63.0)
+Data(id=null, speed=0.39, altitude=299.12, longitude=20.0248, latitude=50.08, temperature=24.49, time=2022-04-05T17:46:42.246450, rssi=-63.0)
+Data(id=null, speed=0.38, altitude=298.89, longitude=20.0248, latitude=50.0801, temperature=24.5, time=2022-04-05T17:47:43.174509, rssi=-58.0)
+Data(id=null, speed=0.02, altitude=299.52, longitude=20.0248, latitude=50.0801, temperature=24.48, time=2022-04-05T17:48:44.082603, rssi=-63.0)
+Data(id=null, speed=0.07, altitude=298.44, longitude=20.0249, latitude=50.0801, temperature=24.59, time=2022-04-05T17:49:45.006151, rssi=-61.0)
+2022-04-05 17:49:51.912  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 50 total, 3 closed abnormally (3 connect failure, 0 send limit, 8 transport error)], stompSubProtocol[processed CONNECT(46)-CONNECTED(46)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 426], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 317], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 1, completed tasks = 1891]
+Data(id=null, speed=0.16, altitude=298.61, longitude=20.0249, latitude=50.08, temperature=24.59, time=2022-04-05T17:50:45.923502, rssi=-59.0)
+Data(id=null, speed=0.15, altitude=299.12, longitude=20.0249, latitude=50.08, temperature=24.59, time=2022-04-05T17:51:46.880348, rssi=-61.0)
+Data(id=null, speed=0.15, altitude=298.59, longitude=20.0248, latitude=50.08, temperature=24.68, time=2022-04-05T17:52:47.756225, rssi=-60.0)
+Data(id=null, speed=0.1, altitude=298.86, longitude=20.0249, latitude=50.0801, temperature=24.66, time=2022-04-05T17:53:48.669288, rssi=-63.0)
+Data(id=null, speed=0.13, altitude=297.93, longitude=20.0248, latitude=50.0801, temperature=24.65, time=2022-04-05T17:54:49.577482, rssi=-61.0)
+Data(id=null, speed=0.14, altitude=298.87, longitude=20.0247, latitude=50.0801, temperature=24.5, time=2022-04-05T17:55:50.503920, rssi=-60.0)
+Data(id=null, speed=0.15, altitude=298.92, longitude=20.0247, latitude=50.0801, temperature=24.53, time=2022-04-05T17:56:51.433850, rssi=-61.0)
+Data(id=null, speed=0.6, altitude=298.55, longitude=20.0249, latitude=50.08, temperature=24.5, time=2022-04-05T17:57:52.384592, rssi=-63.0)
+Data(id=null, speed=0.11, altitude=298.13, longitude=20.0249, latitude=50.0801, temperature=24.54, time=2022-04-05T17:58:53.289428, rssi=-61.0)
+Data(id=null, speed=0.31, altitude=298.63, longitude=20.0249, latitude=50.0801, temperature=24.43, time=2022-04-05T17:59:54.201505, rssi=-60.0)
+Data(id=null, speed=0.29, altitude=298.25, longitude=20.0249, latitude=50.08, temperature=24.41, time=2022-04-05T18:00:55.118126, rssi=-63.0)
+Data(id=null, speed=0.49, altitude=297.85, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T18:01:56.046670, rssi=-60.0)
+Data(id=null, speed=0.03, altitude=297.85, longitude=20.025, latitude=50.08, temperature=24.45, time=2022-04-05T18:02:56.963240, rssi=-60.0)
+Data(id=null, speed=0.08, altitude=298.4, longitude=20.025, latitude=50.08, temperature=24.44, time=2022-04-05T18:03:57.894946, rssi=-59.0)
+Data(id=null, speed=0.31, altitude=297.67, longitude=20.0248, latitude=50.08, temperature=24.43, time=2022-04-05T18:04:58.865299, rssi=-60.0)
+Data(id=null, speed=0.07, altitude=298.25, longitude=20.0249, latitude=50.0801, temperature=24.5, time=2022-04-05T18:05:59.741472, rssi=-63.0)
+Data(id=null, speed=0.04, altitude=297.87, longitude=20.0248, latitude=50.0801, temperature=24.54, time=2022-04-05T18:07:00.647586, rssi=-59.0)
+Data(id=null, speed=0.11, altitude=297.26, longitude=20.0248, latitude=50.0801, temperature=24.43, time=2022-04-05T18:08:01.556795, rssi=-59.0)
+Data(id=null, speed=0.17, altitude=298.04, longitude=20.0249, latitude=50.0801, temperature=24.38, time=2022-04-05T18:09:02.484982, rssi=-63.0)
+Data(id=null, speed=0.6, altitude=297.83, longitude=20.0248, latitude=50.0801, temperature=24.43, time=2022-04-05T18:10:03.379092, rssi=-59.0)
+Data(id=null, speed=0.2, altitude=298.04, longitude=20.0249, latitude=50.0801, temperature=24.4, time=2022-04-05T18:11:04.296917, rssi=-61.0)
+Data(id=null, speed=0.49, altitude=297.76, longitude=20.0248, latitude=50.0801, temperature=24.32, time=2022-04-05T18:12:05.249316, rssi=-60.0)
+Data(id=null, speed=0.32, altitude=298.34, longitude=20.0249, latitude=50.08, temperature=24.41, time=2022-04-05T18:13:06.111205, rssi=-60.0)
+Data(id=null, speed=0.02, altitude=298.18, longitude=20.0248, latitude=50.08, temperature=24.4, time=2022-04-05T18:14:07.027448, rssi=-61.0)
+Data(id=null, speed=0.17, altitude=297.88, longitude=20.0249, latitude=50.08, temperature=24.4, time=2022-04-05T18:15:07.959975, rssi=-61.0)
+Data(id=null, speed=0.1, altitude=297.72, longitude=20.0249, latitude=50.08, temperature=24.39, time=2022-04-05T18:16:08.885331, rssi=-61.0)
+Data(id=null, speed=0.28, altitude=297.93, longitude=20.0249, latitude=50.0801, temperature=24.43, time=2022-04-05T18:17:09.834467, rssi=-63.0)
+Data(id=null, speed=0.11, altitude=297.95, longitude=20.0249, latitude=50.0801, temperature=24.36, time=2022-04-05T18:18:10.689830, rssi=-63.0)
+Data(id=null, speed=0.22, altitude=297.13, longitude=20.0249, latitude=50.0801, temperature=24.21, time=2022-04-05T18:19:11.656635, rssi=-63.0)
+2022-04-05 18:19:51.913  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 53 total, 3 closed abnormally (3 connect failure, 0 send limit, 8 transport error)], stompSubProtocol[processed CONNECT(49)-CONNECTED(49)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 450], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 349], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 2, completed tasks = 2303]
+Data(id=null, speed=0.15, altitude=297.66, longitude=20.0249, latitude=50.0801, temperature=24.29, time=2022-04-05T18:20:12.535947, rssi=-60.0)
+Data(id=null, speed=0.26, altitude=297.34, longitude=20.0249, latitude=50.08, temperature=24.34, time=2022-04-05T18:21:13.467771, rssi=-61.0)
+Data(id=null, speed=0.19, altitude=297.26, longitude=20.0249, latitude=50.08, temperature=24.37, time=2022-04-05T18:22:14.385240, rssi=-65.0)
+Data(id=null, speed=0.15, altitude=297.66, longitude=20.0249, latitude=50.08, temperature=24.33, time=2022-04-05T18:23:15.314908, rssi=-60.0)
+Data(id=null, speed=0.25, altitude=297.79, longitude=20.0249, latitude=50.0801, temperature=24.35, time=2022-04-05T18:24:16.229146, rssi=-61.0)
+Data(id=null, speed=0.18, altitude=297.48, longitude=20.0249, latitude=50.08, temperature=24.39, time=2022-04-05T18:25:17.143746, rssi=-61.0)
+Data(id=null, speed=0.34, altitude=297.8, longitude=20.025, latitude=50.08, temperature=24.37, time=2022-04-05T18:26:18.076171, rssi=-63.0)
+Data(id=null, speed=0.75, altitude=297.6, longitude=20.0249, latitude=50.0801, temperature=24.4, time=2022-04-05T18:27:18.984342, rssi=-61.0)
+Data(id=null, speed=0.75, altitude=297.54, longitude=20.025, latitude=50.08, temperature=24.41, time=2022-04-05T18:28:19.922551, rssi=-60.0)
+Data(id=null, speed=0.21, altitude=297.01, longitude=20.0248, latitude=50.08, temperature=24.4, time=2022-04-05T18:29:20.847081, rssi=-63.0)
+Data(id=null, speed=0.46, altitude=296.68, longitude=20.025, latitude=50.08, temperature=24.38, time=2022-04-05T18:30:21.766801, rssi=-63.0)
+Data(id=null, speed=0.88, altitude=296.7, longitude=20.025, latitude=50.08, temperature=24.39, time=2022-04-05T18:31:22.687704, rssi=-63.0)
+Data(id=null, speed=0.11, altitude=296.27, longitude=20.0249, latitude=50.08, temperature=24.42, time=2022-04-05T18:32:23.614500, rssi=-63.0)
+Data(id=null, speed=0.58, altitude=295.81, longitude=20.0249, latitude=50.0801, temperature=24.41, time=2022-04-05T18:33:24.572383, rssi=-60.0)
+Data(id=null, speed=0.82, altitude=295.76, longitude=20.0249, latitude=50.0801, temperature=24.33, time=2022-04-05T18:34:25.451775, rssi=-63.0)
+Data(id=null, speed=0.28, altitude=295.59, longitude=20.025, latitude=50.08, temperature=24.3, time=2022-04-05T18:35:26.364960, rssi=-63.0)
+Data(id=null, speed=0.06, altitude=296.06, longitude=20.0249, latitude=50.08, temperature=24.23, time=2022-04-05T18:36:27.254369, rssi=-60.0)
+Data(id=null, speed=0.35, altitude=295.65, longitude=20.0248, latitude=50.0801, temperature=24.3, time=2022-04-05T18:37:28.793640, rssi=-65.0)
+Data(id=null, speed=0.28, altitude=295.39, longitude=20.0249, latitude=50.0801, temperature=24.29, time=2022-04-05T18:38:29.738882, rssi=-65.0)
+Data(id=null, speed=0.16, altitude=295.64, longitude=20.0249, latitude=50.0799, temperature=24.27, time=2022-04-05T18:39:30.631339, rssi=-63.0)
+Data(id=null, speed=0.02, altitude=295.15, longitude=20.0249, latitude=50.08, temperature=24.33, time=2022-04-05T18:40:31.570868, rssi=-63.0)
+Data(id=null, speed=0.43, altitude=295.09, longitude=20.0249, latitude=50.08, temperature=24.31, time=2022-04-05T18:41:32.465084, rssi=-61.0)
+Data(id=null, speed=0.27, altitude=295.57, longitude=20.025, latitude=50.0799, temperature=24.25, time=2022-04-05T18:42:33.382536, rssi=-65.0)
+Data(id=null, speed=0.19, altitude=295.48, longitude=20.0249, latitude=50.0799, temperature=24.34, time=2022-04-05T18:43:34.302219, rssi=-63.0)
+Data(id=null, speed=0.31, altitude=294.94, longitude=20.0249, latitude=50.08, temperature=24.36, time=2022-04-05T18:44:35.206963, rssi=-61.0)
+Data(id=null, speed=0.23, altitude=294.83, longitude=20.0249, latitude=50.08, temperature=24.32, time=2022-04-05T18:45:36.115038, rssi=-63.0)
+Data(id=null, speed=0.56, altitude=294.64, longitude=20.0249, latitude=50.08, temperature=24.37, time=2022-04-05T18:46:37.046294, rssi=-65.0)
+Data(id=null, speed=0.2, altitude=294.37, longitude=20.025, latitude=50.0799, temperature=24.32, time=2022-04-05T18:47:37.964300, rssi=-65.0)
+Data(id=null, speed=0.08, altitude=294.25, longitude=20.0249, latitude=50.0799, temperature=24.27, time=2022-04-05T18:48:38.887506, rssi=-65.0)
+2022-04-05 18:49:31.970  WARN 8291 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/javascript;charset=UTF-8']
+Data(id=null, speed=0.37, altitude=293.95, longitude=20.0249, latitude=50.0799, temperature=24.06, time=2022-04-05T18:49:39.847954, rssi=-65.0)
+2022-04-05 18:49:51.913  INFO 8291 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(0)-HttpStream(1)-HttpPoll(0), 61 total, 3 closed abnormally (3 connect failure, 0 send limit, 8 transport error)], stompSubProtocol[processed CONNECT(55)-CONNECTED(55)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 510], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 378], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 2, completed tasks = 2696]
+Data(id=null, speed=0.13, altitude=294.02, longitude=20.0249, latitude=50.08, temperature=24.04, time=2022-04-05T18:50:40.723186, rssi=-66.0)
+Data(id=null, speed=0.17, altitude=294.87, longitude=20.0249, latitude=50.0799, temperature=23.78, time=2022-04-05T18:51:41.927553, rssi=-65.0)
+Data(id=null, speed=0.08, altitude=294.14, longitude=20.025, latitude=50.08, temperature=24.0, time=2022-04-05T18:52:42.842870, rssi=-65.0)
+Data(id=null, speed=0.33, altitude=294.57, longitude=20.0249, latitude=50.0799, temperature=24.17, time=2022-04-05T18:53:43.749625, rssi=-65.0)
+Data(id=null, speed=0.37, altitude=294.81, longitude=20.0249, latitude=50.0799, temperature=24.25, time=2022-04-05T18:54:44.662295, rssi=-65.0)
+Data(id=null, speed=0.2, altitude=294.48, longitude=20.025, latitude=50.0799, temperature=24.08, time=2022-04-05T18:55:45.572953, rssi=-63.0)
+Data(id=null, speed=0.31, altitude=295.01, longitude=20.0249, latitude=50.08, temperature=23.97, time=2022-04-05T18:56:46.488906, rssi=-63.0)
+Data(id=null, speed=0.11, altitude=295.29, longitude=20.025, latitude=50.0799, temperature=24.14, time=2022-04-05T18:57:47.426699, rssi=-65.0)
+Data(id=null, speed=0.15, altitude=295.87, longitude=20.0248, latitude=50.08, temperature=23.9, time=2022-04-05T18:58:48.363784, rssi=-63.0)
+Data(id=null, speed=0.14, altitude=295.76, longitude=20.0249, latitude=50.08, temperature=24.0, time=2022-04-05T18:59:49.265332, rssi=-65.0)
+Data(id=null, speed=0.55, altitude=295.92, longitude=20.0249, latitude=50.08, temperature=24.14, time=2022-04-05T19:00:50.171398, rssi=-65.0)
+Data(id=null, speed=0.07, altitude=295.69, longitude=20.0249, latitude=50.0798, temperature=24.24, time=2022-04-05T19:01:51.112423, rssi=-64.0)
+Data(id=null, speed=0.14, altitude=296.41, longitude=20.0249, latitude=50.08, temperature=24.23, time=2022-04-05T19:02:52.001355, rssi=-64.0)
+Data(id=null, speed=0.13, altitude=296.36, longitude=20.0249, latitude=50.08, temperature=24.3, time=2022-04-05T19:03:52.927256, rssi=-63.0)
+Data(id=null, speed=0.55, altitude=296.28, longitude=20.0249, latitude=50.08, temperature=24.39, time=2022-04-05T19:04:53.793251, rssi=-61.0)
+Data(id=null, speed=0.27, altitude=296.34, longitude=20.0249, latitude=50.08, temperature=24.41, time=2022-04-05T19:05:54.687009, rssi=-63.0)
+Data(id=null, speed=0.4, altitude=296.13, longitude=20.0249, latitude=50.08, temperature=24.33, time=2022-04-05T19:06:55.585942, rssi=-66.0)
+Data(id=null, speed=0.81, altitude=296.26, longitude=20.0249, latitude=50.08, temperature=24.23, time=2022-04-05T19:07:56.745650, rssi=-63.0)
+Data(id=null, speed=1.24, altitude=296.81, longitude=20.0248, latitude=50.0801, temperature=24.13, time=2022-04-05T19:08:57.639197, rssi=-65.0)
+Data(id=null, speed=0.25, altitude=295.98, longitude=20.0249, latitude=50.08, temperature=24.24, time=2022-04-05T19:09:58.539949, rssi=-63.0)
+Data(id=null, speed=0.09, altitude=296.25, longitude=20.0249, latitude=50.08, temperature=24.26, time=2022-04-05T19:10:59.445604, rssi=-66.0)
+Data(id=null, speed=0.07, altitude=296.64, longitude=20.0249, latitude=50.08, temperature=24.23, time=2022-04-05T19:12:00.321183, rssi=-65.0)
+Data(id=null, speed=0.44, altitude=296.34, longitude=20.0249, latitude=50.08, temperature=24.3, time=2022-04-05T19:13:01.203752, rssi=-63.0)
+Data(id=null, speed=0.04, altitude=444.2, longitude=20.0249, latitude=50.08, temperature=25.05, time=2022-04-05T19:14:02.108683, rssi=-63.0)
+2022-04-05 19:14:37.088  INFO 8291 --- [nio-8080-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x040x010x00P0x8e]0x880x8e00x00...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-04-05 19:14:52.114  WARN 8291 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'text/event-stream;charset=UTF-8']
+Data(id=null, speed=0.34, altitude=460.85, longitude=20.0249, latitude=50.08, temperature=24.55, time=2022-04-05T19:15:02.995556, rssi=-66.0)
+Data(id=null, speed=0.22, altitude=467.44, longitude=20.0249, latitude=50.08, temperature=24.36, time=2022-04-05T19:16:03.868860, rssi=-63.0)
+Data(id=null, speed=0.89, altitude=469.97, longitude=20.0248, latitude=50.0801, temperature=24.28, time=2022-04-05T19:17:04.769749, rssi=-60.0)
+Data(id=null, speed=0.06, altitude=470.7, longitude=20.0249, latitude=50.0801, temperature=24.26, time=2022-04-05T19:18:05.685919, rssi=-59.0)
+Data(id=null, speed=0.54, altitude=472.98, longitude=20.0249, latitude=50.0801, temperature=24.2, time=2022-04-05T19:19:06.682356, rssi=-60.0)
+2022-04-05 19:19:51.914  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 64 total, 3 closed abnormally (3 connect failure, 0 send limit, 8 transport error)], stompSubProtocol[processed CONNECT(58)-CONNECTED(58)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 534], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 436], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 3, completed tasks = 3163]
+Data(id=null, speed=0.16, altitude=479.32, longitude=20.0249, latitude=50.08, temperature=24.01, time=2022-04-05T19:20:07.655424, rssi=-61.0)
+Data(id=null, speed=0.32, altitude=494.48, longitude=20.0249, latitude=50.0801, temperature=23.53, time=2022-04-05T19:21:08.654567, rssi=-61.0)
+Data(id=null, speed=0.71, altitude=485.67, longitude=20.0249, latitude=50.0801, temperature=23.8, time=2022-04-05T19:22:09.670748, rssi=-61.0)
+Data(id=null, speed=0.14, altitude=482.98, longitude=20.0249, latitude=50.08, temperature=23.88, time=2022-04-05T19:23:10.929186, rssi=-59.0)
+Data(id=null, speed=0.49, altitude=491.34, longitude=20.0249, latitude=50.08, temperature=23.63, time=2022-04-05T19:24:11.951649, rssi=-63.0)
+Data(id=null, speed=0.28, altitude=494.93, longitude=20.0249, latitude=50.08, temperature=23.51, time=2022-04-05T19:25:12.956423, rssi=-61.0)
+Data(id=null, speed=0.07, altitude=506.45, longitude=20.0249, latitude=50.08, temperature=23.18, time=2022-04-05T19:26:13.943044, rssi=-60.0)
+Data(id=null, speed=0.07, altitude=501.25, longitude=20.0249, latitude=50.08, temperature=23.33, time=2022-04-05T19:27:14.955542, rssi=-63.0)
+Data(id=null, speed=0.43, altitude=492.74, longitude=20.0249, latitude=50.08, temperature=23.59, time=2022-04-05T19:28:15.968972, rssi=-60.0)
+Data(id=null, speed=0.32, altitude=491.36, longitude=20.0249, latitude=50.0799, temperature=23.64, time=2022-04-05T19:29:16.945903, rssi=-60.0)
+Data(id=null, speed=0.05, altitude=504.78, longitude=20.0249, latitude=50.08, temperature=23.23, time=2022-04-05T19:30:17.985227, rssi=-63.0)
+Data(id=null, speed=0.46, altitude=304.25, longitude=20.0249, latitude=50.0799, temperature=23.5, time=2022-04-05T19:31:18.988282, rssi=-60.0)
+Data(id=null, speed=0.12, altitude=295.94, longitude=20.0249, latitude=50.0799, temperature=23.33, time=2022-04-05T19:32:20.001648, rssi=-61.0)
+Data(id=null, speed=0.15, altitude=294.38, longitude=20.0248, latitude=50.08, temperature=23.61, time=2022-04-05T19:33:21.005017, rssi=-59.0)
+Data(id=null, speed=0.08, altitude=294.6, longitude=20.0248, latitude=50.08, temperature=23.76, time=2022-04-05T19:34:22.026101, rssi=-60.0)
+Data(id=null, speed=0.17, altitude=294.21, longitude=20.0249, latitude=50.08, temperature=23.78, time=2022-04-05T19:35:23.032624, rssi=-61.0)
+Data(id=null, speed=0.29, altitude=293.9, longitude=20.0249, latitude=50.08, temperature=23.85, time=2022-04-05T19:36:24.052064, rssi=-61.0)
+Data(id=null, speed=0.14, altitude=293.67, longitude=20.0249, latitude=50.08, temperature=23.94, time=2022-04-05T19:37:25.042415, rssi=-61.0)
+Data(id=null, speed=0.18, altitude=293.59, longitude=20.0249, latitude=50.08, temperature=23.89, time=2022-04-05T19:38:26.051662, rssi=-59.0)
+Data(id=null, speed=0.44, altitude=293.72, longitude=20.0248, latitude=50.08, temperature=23.95, time=2022-04-05T19:39:27.353675, rssi=-60.0)
+Data(id=null, speed=0.34, altitude=294.09, longitude=20.0249, latitude=50.08, temperature=23.92, time=2022-04-05T19:40:28.322528, rssi=-60.0)
+Data(id=null, speed=0.26, altitude=293.3, longitude=20.0248, latitude=50.0799, temperature=23.91, time=2022-04-05T19:41:29.324802, rssi=-61.0)
+Data(id=null, speed=0.16, altitude=292.56, longitude=20.0248, latitude=50.0798, temperature=23.69, time=2022-04-05T19:42:30.321440, rssi=-63.0)
+Data(id=null, speed=0.25, altitude=292.86, longitude=20.0249, latitude=50.0799, temperature=23.88, time=2022-04-05T19:43:31.303249, rssi=-63.0)
+Data(id=null, speed=0.04, altitude=294.64, longitude=20.0249, latitude=50.08, temperature=23.52, time=2022-04-05T19:44:32.305341, rssi=-60.0)
+Data(id=null, speed=0.07, altitude=292.42, longitude=20.0249, latitude=50.08, temperature=23.77, time=2022-04-05T19:45:33.308171, rssi=-60.0)
+Data(id=null, speed=0.15, altitude=292.47, longitude=20.0248, latitude=50.08, temperature=23.84, time=2022-04-05T19:46:34.324410, rssi=-61.0)
+Data(id=null, speed=0.33, altitude=292.28, longitude=20.0248, latitude=50.0799, temperature=23.92, time=2022-04-05T19:47:35.319692, rssi=-60.0)
+2022-04-05 19:47:41.585  INFO 8291 --- [io-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0xc90x940xd10xa60xae0x9c0x05lM/0x090x8cp#0xee0x9d*5#]0xc7R:0xc80x8e/0x110xb80xcd0x89Z0xfb0xa40x19f0xd20xce0xb30xa10x810xbb0xfc0xa00xdd%d10x170xa6%n0xc5...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+Data(id=null, speed=0.1, altitude=293.23, longitude=20.0248, latitude=50.08, temperature=23.92, time=2022-04-05T19:48:36.334936, rssi=-61.0)
+Data(id=null, speed=0.32, altitude=292.25, longitude=20.0248, latitude=50.08, temperature=23.96, time=2022-04-05T19:49:37.345959, rssi=-60.0)
+2022-04-05 19:49:51.914  INFO 8291 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 73 total, 3 closed abnormally (3 connect failure, 0 send limit, 9 transport error)], stompSubProtocol[processed CONNECT(67)-CONNECTED(67)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 615], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 521], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 3, completed tasks = 3652]
+Data(id=null, speed=0.19, altitude=291.94, longitude=20.0248, latitude=50.0799, temperature=23.96, time=2022-04-05T19:50:38.369139, rssi=-60.0)
+Data(id=null, speed=0.18, altitude=292.28, longitude=20.0248, latitude=50.0799, temperature=23.92, time=2022-04-05T19:51:39.393108, rssi=-61.0)
+Data(id=null, speed=0.11, altitude=292.51, longitude=20.0248, latitude=50.0801, temperature=23.93, time=2022-04-05T19:52:40.411166, rssi=-61.0)
+Data(id=null, speed=0.1, altitude=291.64, longitude=20.0248, latitude=50.0799, temperature=23.58, time=2022-04-05T19:53:41.439831, rssi=-61.0)
+Data(id=null, speed=0.2, altitude=292.37, longitude=20.0248, latitude=50.08, temperature=23.81, time=2022-04-05T19:54:42.654831, rssi=-60.0)
+Data(id=null, speed=0.25, altitude=292.33, longitude=20.0248, latitude=50.0799, temperature=23.85, time=2022-04-05T19:55:43.582172, rssi=-61.0)
+Data(id=null, speed=0.04, altitude=292.09, longitude=20.0248, latitude=50.0798, temperature=23.85, time=2022-04-05T19:56:44.671318, rssi=-63.0)
+Data(id=null, speed=0.35, altitude=291.6, longitude=20.0248, latitude=50.08, temperature=23.99, time=2022-04-05T19:57:45.633887, rssi=-61.0)
+Data(id=null, speed=1.0, altitude=291.91, longitude=20.0248, latitude=50.0799, temperature=24.0, time=2022-04-05T19:58:46.635769, rssi=-63.0)
+Data(id=null, speed=0.25, altitude=291.92, longitude=20.0249, latitude=50.08, temperature=23.98, time=2022-04-05T19:59:47.672868, rssi=-59.0)
+Data(id=null, speed=0.11, altitude=292.13, longitude=20.0249, latitude=50.08, temperature=23.89, time=2022-04-05T20:00:48.688173, rssi=-61.0)
+Data(id=null, speed=0.07, altitude=292.12, longitude=20.0249, latitude=50.0799, temperature=23.99, time=2022-04-05T20:01:49.719045, rssi=-60.0)
+Data(id=null, speed=0.46, altitude=291.89, longitude=20.0249, latitude=50.08, temperature=23.98, time=2022-04-05T20:02:50.726339, rssi=-63.0)
+Data(id=null, speed=0.02, altitude=291.14, longitude=20.0249, latitude=50.08, temperature=24.07, time=2022-04-05T20:03:51.771444, rssi=-63.0)
+Data(id=null, speed=0.11, altitude=290.89, longitude=20.0249, latitude=50.08, temperature=24.03, time=2022-04-05T20:04:52.834140, rssi=-59.0)
+Data(id=null, speed=0.77, altitude=290.7, longitude=20.025, latitude=50.08, temperature=24.08, time=2022-04-05T20:05:53.807008, rssi=-61.0)
+Data(id=null, speed=0.49, altitude=289.93, longitude=20.025, latitude=50.08, temperature=24.12, time=2022-04-05T20:06:54.836221, rssi=-63.0)
+Data(id=null, speed=1.34, altitude=290.63, longitude=20.025, latitude=50.0799, temperature=24.08, time=2022-04-05T20:07:55.854629, rssi=-60.0)
+Data(id=null, speed=0.34, altitude=290.46, longitude=20.0248, latitude=50.08, temperature=24.04, time=2022-04-05T20:08:56.974499, rssi=-61.0)
+Data(id=null, speed=0.21, altitude=290.31, longitude=20.0249, latitude=50.08, temperature=24.04, time=2022-04-05T20:09:58.011504, rssi=-59.0)
+Data(id=null, speed=0.05, altitude=290.28, longitude=20.025, latitude=50.0799, temperature=24.04, time=2022-04-05T20:10:59.057883, rssi=-63.0)
+Data(id=null, speed=0.15, altitude=289.9, longitude=20.0249, latitude=50.0799, temperature=24.03, time=2022-04-05T20:12:00.083833, rssi=-61.0)
+Data(id=null, speed=0.13, altitude=290.18, longitude=20.0249, latitude=50.08, temperature=24.07, time=2022-04-05T20:13:01.104523, rssi=-63.0)
+Data(id=null, speed=0.16, altitude=289.93, longitude=20.025, latitude=50.08, temperature=24.12, time=2022-04-05T20:14:02.142962, rssi=-61.0)
+Data(id=null, speed=0.19, altitude=290.01, longitude=20.0249, latitude=50.08, temperature=24.1, time=2022-04-05T20:15:03.173609, rssi=-63.0)
+Data(id=null, speed=0.14, altitude=289.92, longitude=20.0249, latitude=50.08, temperature=24.06, time=2022-04-05T20:16:04.221073, rssi=-63.0)
+Data(id=null, speed=0.34, altitude=290.28, longitude=20.0251, latitude=50.08, temperature=24.07, time=2022-04-05T20:17:05.230702, rssi=-61.0)
+Data(id=null, speed=0.07, altitude=290.28, longitude=20.025, latitude=50.08, temperature=24.08, time=2022-04-05T20:18:06.245278, rssi=-59.0)
+Data(id=null, speed=0.34, altitude=290.08, longitude=20.0249, latitude=50.0801, temperature=24.06, time=2022-04-05T20:19:07.283859, rssi=-61.0)
+2022-04-05 20:19:51.915  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 76 total, 3 closed abnormally (3 connect failure, 0 send limit, 9 transport error)], stompSubProtocol[processed CONNECT(70)-CONNECTED(70)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 639], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 594], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 4152]
+Data(id=null, speed=0.05, altitude=289.29, longitude=20.025, latitude=50.0801, temperature=24.09, time=2022-04-05T20:20:08.313400, rssi=-63.0)
+Data(id=null, speed=0.21, altitude=289.6, longitude=20.0251, latitude=50.08, temperature=24.09, time=2022-04-05T20:21:09.345565, rssi=-60.0)
+Data(id=null, speed=0.22, altitude=289.17, longitude=20.0251, latitude=50.0799, temperature=24.12, time=2022-04-05T20:22:10.366659, rssi=-59.0)
+2022-04-05 20:22:45.591  WARN 8291 --- [nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+Data(id=null, speed=0.42, altitude=289.72, longitude=20.0252, latitude=50.08, temperature=24.11, time=2022-04-05T20:23:11.379735, rssi=-59.0)
+Data(id=null, speed=0.28, altitude=289.93, longitude=20.0251, latitude=50.08, temperature=24.12, time=2022-04-05T20:24:12.389885, rssi=-61.0)
+Data(id=null, speed=0.24, altitude=289.12, longitude=20.0251, latitude=50.08, temperature=24.15, time=2022-04-05T20:25:13.428761, rssi=-61.0)
+Data(id=null, speed=0.02, altitude=288.99, longitude=20.0249, latitude=50.08, temperature=24.09, time=2022-04-05T20:26:14.438194, rssi=-61.0)
+Data(id=null, speed=0.37, altitude=288.89, longitude=20.0251, latitude=50.0801, temperature=24.12, time=2022-04-05T20:27:15.457839, rssi=-58.0)
+Data(id=null, speed=0.41, altitude=288.91, longitude=20.0249, latitude=50.0801, temperature=24.12, time=2022-04-05T20:28:16.492544, rssi=-63.0)
+Data(id=null, speed=0.12, altitude=288.6, longitude=20.025, latitude=50.0801, temperature=24.13, time=2022-04-05T20:29:17.511802, rssi=-60.0)
+Data(id=null, speed=0.7, altitude=288.57, longitude=20.0249, latitude=50.0801, temperature=24.14, time=2022-04-05T20:30:18.536065, rssi=-59.0)
+Data(id=null, speed=0.04, altitude=288.94, longitude=20.025, latitude=50.0801, temperature=24.1, time=2022-04-05T20:31:19.625623, rssi=-63.0)
+Data(id=null, speed=0.28, altitude=288.86, longitude=20.025, latitude=50.08, temperature=24.12, time=2022-04-05T20:32:20.637105, rssi=-63.0)
+Data(id=null, speed=0.1, altitude=288.25, longitude=20.0251, latitude=50.08, temperature=24.14, time=2022-04-05T20:33:21.675667, rssi=-61.0)
+Data(id=null, speed=0.74, altitude=288.89, longitude=20.0249, latitude=50.0801, temperature=23.98, time=2022-04-05T20:34:22.737410, rssi=-60.0)
+Data(id=null, speed=0.1, altitude=288.42, longitude=20.025, latitude=50.08, temperature=24.0, time=2022-04-05T20:35:23.749134, rssi=-51.0)
+Data(id=null, speed=0.34, altitude=288.26, longitude=20.025, latitude=50.08, temperature=24.02, time=2022-04-05T20:36:24.789785, rssi=-49.0)
+Data(id=null, speed=0.18, altitude=288.93, longitude=20.0249, latitude=50.08, temperature=24.0, time=2022-04-05T20:37:25.823410, rssi=-49.0)
+Data(id=null, speed=0.06, altitude=288.4, longitude=20.0248, latitude=50.0801, temperature=23.95, time=2022-04-05T20:38:26.852849, rssi=-51.0)
+Data(id=null, speed=0.22, altitude=287.53, longitude=20.0249, latitude=50.08, temperature=23.88, time=2022-04-05T20:39:27.903368, rssi=-51.0)
+Data(id=null, speed=0.14, altitude=287.8, longitude=20.025, latitude=50.0799, temperature=23.92, time=2022-04-05T20:40:28.964438, rssi=-49.0)
+Data(id=null, speed=0.34, altitude=288.14, longitude=20.025, latitude=50.0799, temperature=23.91, time=2022-04-05T20:41:30.012611, rssi=-51.0)
+Data(id=null, speed=0.15, altitude=287.16, longitude=20.025, latitude=50.0799, temperature=23.64, time=2022-04-05T20:42:31.060787, rssi=-49.0)
+Data(id=null, speed=0.06, altitude=288.11, longitude=20.0249, latitude=50.08, temperature=23.82, time=2022-04-05T20:43:32.111445, rssi=-51.0)
+Data(id=null, speed=0.11, altitude=287.28, longitude=20.0249, latitude=50.08, temperature=23.78, time=2022-04-05T20:44:33.149490, rssi=-51.0)
+Data(id=null, speed=0.17, altitude=287.7, longitude=20.0248, latitude=50.08, temperature=23.9, time=2022-04-05T20:45:34.185716, rssi=-51.0)
+Data(id=null, speed=0.03, altitude=287.44, longitude=20.0248, latitude=50.08, temperature=23.96, time=2022-04-05T20:46:35.238923, rssi=-51.0)
+Data(id=null, speed=0.07, altitude=287.85, longitude=20.0247, latitude=50.08, temperature=23.82, time=2022-04-05T20:47:36.248985, rssi=-53.0)
+Data(id=null, speed=0.32, altitude=288.19, longitude=20.0248, latitude=50.08, temperature=23.93, time=2022-04-05T20:48:37.287163, rssi=-51.0)
+Data(id=null, speed=0.08, altitude=287.47, longitude=20.0247, latitude=50.08, temperature=23.94, time=2022-04-05T20:49:38.295305, rssi=-51.0)
+2022-04-05 20:49:51.915  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 88 total, 3 closed abnormally (3 connect failure, 0 send limit, 11 transport error)], stompSubProtocol[processed CONNECT(82)-CONNECTED(82)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 750], outboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 702], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 3, completed tasks = 4671]
+Data(id=null, speed=0.08, altitude=287.35, longitude=20.0248, latitude=50.0801, temperature=23.95, time=2022-04-05T20:50:39.294349, rssi=-48.0)
+Data(id=null, speed=0.25, altitude=287.17, longitude=20.0247, latitude=50.0801, temperature=23.95, time=2022-04-05T20:51:40.363835, rssi=-48.0)
+Data(id=null, speed=0.09, altitude=288.12, longitude=20.0248, latitude=50.0799, temperature=23.94, time=2022-04-05T20:52:41.347378, rssi=-48.0)
+Data(id=null, speed=0.27, altitude=287.53, longitude=20.0247, latitude=50.0799, temperature=23.98, time=2022-04-05T20:53:42.357447, rssi=-51.0)
+Data(id=null, speed=0.07, altitude=287.68, longitude=20.0246, latitude=50.0798, temperature=23.76, time=2022-04-05T20:54:43.395394, rssi=-49.0)
+Data(id=null, speed=0.04, altitude=287.13, longitude=20.0247, latitude=50.0799, temperature=23.86, time=2022-04-05T20:55:44.426088, rssi=-51.0)
+Data(id=null, speed=0.23, altitude=287.07, longitude=20.0248, latitude=50.0799, temperature=23.88, time=2022-04-05T20:56:45.423897, rssi=-51.0)
+Data(id=null, speed=0.02, altitude=287.72, longitude=20.0248, latitude=50.0801, temperature=23.92, time=2022-04-05T20:57:46.437748, rssi=-51.0)
+Data(id=null, speed=0.06, altitude=289.43, longitude=20.0248, latitude=50.08, temperature=23.36, time=2022-04-05T20:58:47.428921, rssi=-48.0)
+Data(id=null, speed=0.1, altitude=286.73, longitude=20.0247, latitude=50.08, temperature=23.61, time=2022-04-05T20:59:48.469131, rssi=-51.0)
+Data(id=null, speed=0.23, altitude=287.08, longitude=20.0248, latitude=50.08, temperature=23.73, time=2022-04-05T21:00:49.426189, rssi=-51.0)
+Data(id=null, speed=0.12, altitude=287.4, longitude=20.0248, latitude=50.0801, temperature=23.72, time=2022-04-05T21:01:50.429087, rssi=-49.0)
+Data(id=null, speed=0.11, altitude=286.21, longitude=20.0248, latitude=50.08, temperature=23.65, time=2022-04-05T21:02:51.432656, rssi=-51.0)
+Data(id=null, speed=0.1, altitude=286.85, longitude=20.0249, latitude=50.0801, temperature=23.82, time=2022-04-05T21:03:52.453046, rssi=-51.0)
+Data(id=null, speed=1.48, altitude=289.28, longitude=20.0249, latitude=50.08, temperature=23.68, time=2022-04-05T21:04:53.489265, rssi=-53.0)
+Data(id=null, speed=0.31, altitude=286.35, longitude=20.0249, latitude=50.08, temperature=23.72, time=2022-04-05T21:05:54.446530, rssi=-51.0)
+Data(id=null, speed=0.31, altitude=287.2, longitude=20.0249, latitude=50.08, temperature=23.82, time=2022-04-05T21:06:55.466064, rssi=-49.0)
+Data(id=null, speed=0.18, altitude=287.72, longitude=20.0249, latitude=50.08, temperature=23.79, time=2022-04-05T21:07:56.475990, rssi=-51.0)
+Data(id=null, speed=0.16, altitude=286.96, longitude=20.0249, latitude=50.08, temperature=23.83, time=2022-04-05T21:08:57.487642, rssi=-51.0)
+Data(id=null, speed=0.63, altitude=287.52, longitude=20.0249, latitude=50.08, temperature=23.85, time=2022-04-05T21:09:58.515569, rssi=-53.0)
+Data(id=null, speed=0.22, altitude=286.93, longitude=20.0248, latitude=50.0801, temperature=23.7, time=2022-04-05T21:10:59.548909, rssi=-48.0)
+Data(id=null, speed=0.05, altitude=287.46, longitude=20.0248, latitude=50.08, temperature=23.79, time=2022-04-05T21:12:00.550219, rssi=-53.0)
+Data(id=null, speed=0.13, altitude=286.71, longitude=20.0249, latitude=50.08, temperature=23.85, time=2022-04-05T21:13:01.562359, rssi=-53.0)
+Data(id=null, speed=0.14, altitude=287.08, longitude=20.0249, latitude=50.0801, temperature=23.71, time=2022-04-05T21:14:02.589811, rssi=-49.0)
+Data(id=null, speed=0.04, altitude=286.58, longitude=20.0248, latitude=50.0801, temperature=23.85, time=2022-04-05T21:15:03.605013, rssi=-51.0)
+Data(id=null, speed=0.06, altitude=286.13, longitude=20.0249, latitude=50.0801, temperature=23.89, time=2022-04-05T21:16:04.595349, rssi=-51.0)
+Data(id=null, speed=0.17, altitude=286.18, longitude=20.0249, latitude=50.0801, temperature=23.81, time=2022-04-05T21:17:05.590182, rssi=-53.0)
+Data(id=null, speed=0.12, altitude=286.43, longitude=20.0249, latitude=50.0801, temperature=23.81, time=2022-04-05T21:18:06.588974, rssi=-53.0)
+Data(id=null, speed=0.18, altitude=286.54, longitude=20.0249, latitude=50.0801, temperature=23.78, time=2022-04-05T21:19:07.599784, rssi=-51.0)
+2022-04-05 21:19:51.916  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 92 total, 3 closed abnormally (3 connect failure, 0 send limit, 11 transport error)], stompSubProtocol[processed CONNECT(86)-CONNECTED(86)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 783], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 791], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 5198]
+Data(id=null, speed=0.03, altitude=286.63, longitude=20.0249, latitude=50.0801, temperature=23.79, time=2022-04-05T21:20:08.571937, rssi=-51.0)
+Data(id=null, speed=0.04, altitude=287.15, longitude=20.0249, latitude=50.0801, temperature=23.77, time=2022-04-05T21:21:09.606091, rssi=-51.0)
+Data(id=null, speed=0.12, altitude=286.66, longitude=20.0248, latitude=50.0801, temperature=23.81, time=2022-04-05T21:22:10.694801, rssi=-51.0)
+Data(id=null, speed=0.66, altitude=286.71, longitude=20.0248, latitude=50.08, temperature=23.88, time=2022-04-05T21:23:11.598812, rssi=-49.0)
+Data(id=null, speed=0.12, altitude=286.7, longitude=20.0248, latitude=50.0801, temperature=23.92, time=2022-04-05T21:24:12.605051, rssi=-51.0)
+Data(id=null, speed=0.2, altitude=286.3, longitude=20.0248, latitude=50.0801, temperature=23.92, time=2022-04-05T21:25:13.619020, rssi=-49.0)
+Data(id=null, speed=0.39, altitude=286.31, longitude=20.0248, latitude=50.0801, temperature=23.93, time=2022-04-05T21:26:14.613231, rssi=-49.0)
+Data(id=null, speed=0.09, altitude=286.56, longitude=20.0249, latitude=50.0801, temperature=23.98, time=2022-04-05T21:27:15.646789, rssi=-51.0)
+Data(id=null, speed=0.16, altitude=286.35, longitude=20.0249, latitude=50.0802, temperature=24.01, time=2022-04-05T21:28:16.645775, rssi=-51.0)
+Data(id=null, speed=0.08, altitude=287.1, longitude=20.0249, latitude=50.0801, temperature=24.01, time=2022-04-05T21:29:17.668402, rssi=-53.0)
+Data(id=null, speed=0.11, altitude=286.5, longitude=20.0248, latitude=50.0801, temperature=24.06, time=2022-04-05T21:30:18.666198, rssi=-51.0)
+Data(id=null, speed=0.21, altitude=286.82, longitude=20.0248, latitude=50.0801, temperature=24.01, time=2022-04-05T21:31:19.685490, rssi=-51.0)
+Data(id=null, speed=0.44, altitude=286.56, longitude=20.0248, latitude=50.0802, temperature=24.05, time=2022-04-05T21:32:20.702631, rssi=-53.0)
+Data(id=null, speed=0.13, altitude=286.6, longitude=20.0247, latitude=50.0802, temperature=24.1, time=2022-04-05T21:33:21.735943, rssi=-53.0)
+Data(id=null, speed=0.12, altitude=286.26, longitude=20.0249, latitude=50.0802, temperature=24.07, time=2022-04-05T21:34:22.736838, rssi=-51.0)
+Data(id=null, speed=0.18, altitude=286.19, longitude=20.0248, latitude=50.0802, temperature=24.07, time=2022-04-05T21:35:23.764249, rssi=-48.0)
+Data(id=null, speed=0.27, altitude=286.24, longitude=20.0248, latitude=50.0802, temperature=24.07, time=2022-04-05T21:36:24.765162, rssi=-53.0)
+Data(id=null, speed=0.08, altitude=286.06, longitude=20.0249, latitude=50.0802, temperature=24.09, time=2022-04-05T21:37:25.798979, rssi=-51.0)
+Data(id=null, speed=0.24, altitude=286.34, longitude=20.0248, latitude=50.0801, temperature=24.14, time=2022-04-05T21:38:26.795344, rssi=-51.0)
+Data(id=null, speed=0.1, altitude=286.31, longitude=20.0248, latitude=50.0802, temperature=24.18, time=2022-04-05T21:39:27.791562, rssi=-51.0)
+Data(id=null, speed=0.1, altitude=286.64, longitude=20.0248, latitude=50.0801, temperature=24.13, time=2022-04-05T21:40:28.800119, rssi=-49.0)
+Data(id=null, speed=0.39, altitude=286.09, longitude=20.0248, latitude=50.0801, temperature=24.23, time=2022-04-05T21:41:29.822765, rssi=-48.0)
+Data(id=null, speed=0.88, altitude=286.16, longitude=20.0248, latitude=50.0801, temperature=24.23, time=2022-04-05T21:42:30.833809, rssi=-53.0)
+Data(id=null, speed=0.16, altitude=286.39, longitude=20.0249, latitude=50.08, temperature=24.19, time=2022-04-05T21:44:32.891561, rssi=-51.0)
+Data(id=null, speed=0.23, altitude=286.43, longitude=20.0248, latitude=50.0801, temperature=24.19, time=2022-04-05T21:45:33.895375, rssi=-53.0)
+Data(id=null, speed=0.08, altitude=286.8, longitude=20.0248, latitude=50.0801, temperature=24.17, time=2022-04-05T21:47:35.989372, rssi=-49.0)
+Data(id=null, speed=0.01, altitude=286.27, longitude=20.0248, latitude=50.0801, temperature=24.24, time=2022-04-05T21:48:36.978155, rssi=-51.0)
+Data(id=null, speed=0.27, altitude=286.71, longitude=20.0249, latitude=50.0801, temperature=24.3, time=2022-04-05T21:49:37.990629, rssi=-48.0)
+2022-04-05 21:49:51.916  INFO 8291 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 96 total, 3 closed abnormally (3 connect failure, 0 send limit, 13 transport error)], stompSubProtocol[processed CONNECT(89)-CONNECTED(89)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 813], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 879], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 5729]
+Data(id=null, speed=0.12, altitude=286.48, longitude=20.0249, latitude=50.08, temperature=24.28, time=2022-04-05T21:50:39.040948, rssi=-51.0)
+Data(id=null, speed=0.18, altitude=286.1, longitude=20.0249, latitude=50.0801, temperature=24.27, time=2022-04-05T21:51:40.045675, rssi=-51.0)
+Data(id=null, speed=0.73, altitude=286.39, longitude=20.0248, latitude=50.0801, temperature=24.28, time=2022-04-05T21:52:41.104711, rssi=-51.0)
+Data(id=null, speed=0.1, altitude=286.48, longitude=20.0249, latitude=50.08, temperature=24.3, time=2022-04-05T21:53:42.142185, rssi=-51.0)
+Data(id=null, speed=0.46, altitude=286.51, longitude=20.0249, latitude=50.0801, temperature=24.33, time=2022-04-05T21:54:43.138824, rssi=-51.0)
+2022-04-05 21:55:34.294  INFO 8291 --- [nio-8080-exec-9] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 89740 ms. Closing XhrStreamingSockJsSession[id=fhylcucn].
+Data(id=null, speed=0.07, altitude=286.32, longitude=20.0249, latitude=50.08, temperature=24.32, time=2022-04-05T21:55:44.152973, rssi=-49.0)
+Data(id=null, speed=0.15, altitude=286.52, longitude=20.0249, latitude=50.08, temperature=24.31, time=2022-04-05T21:56:45.174649, rssi=-51.0)
+Data(id=null, speed=0.16, altitude=286.47, longitude=20.0248, latitude=50.08, temperature=24.35, time=2022-04-05T21:57:46.197768, rssi=-53.0)
+2022-04-05 21:58:31.450  INFO 8291 --- [nio-8080-exec-2] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 175764 ms. Closing XhrStreamingSockJsSession[id=p3q22tte].
+2022-04-05 21:58:31.450  INFO 8291 --- [nio-8080-exec-2] o.s.w.s.m.SubProtocolWebSocketHandler    : No messages received after 173262 ms. Closing EventSourceStreamingSockJsSession[id=yfhrwb04].
+Data(id=null, speed=0.25, altitude=285.92, longitude=20.0248, latitude=50.0799, temperature=24.36, time=2022-04-05T21:58:47.231056, rssi=-48.0)
+Data(id=null, speed=0.23, altitude=286.27, longitude=20.0248, latitude=50.08, temperature=24.35, time=2022-04-05T21:59:48.247018, rssi=-51.0)
+Data(id=null, speed=0.3, altitude=286.19, longitude=20.0249, latitude=50.08, temperature=24.35, time=2022-04-05T22:00:49.286841, rssi=-51.0)
+Data(id=null, speed=0.2, altitude=286.77, longitude=20.025, latitude=50.08, temperature=24.29, time=2022-04-05T22:01:50.318757, rssi=-53.0)
+Data(id=null, speed=1.09, altitude=285.96, longitude=20.025, latitude=50.08, temperature=24.32, time=2022-04-05T22:02:51.341315, rssi=-48.0)
+Data(id=null, speed=0.14, altitude=286.41, longitude=20.025, latitude=50.08, temperature=24.36, time=2022-04-05T22:03:52.389017, rssi=-49.0)
+Data(id=null, speed=0.65, altitude=286.56, longitude=20.025, latitude=50.0799, temperature=24.38, time=2022-04-05T22:04:53.374855, rssi=-53.0)
+Data(id=null, speed=0.03, altitude=286.38, longitude=20.025, latitude=50.0799, temperature=24.37, time=2022-04-05T22:05:54.390417, rssi=-51.0)
+Data(id=null, speed=0.41, altitude=286.68, longitude=20.025, latitude=50.08, temperature=24.42, time=2022-04-05T22:06:55.422734, rssi=-49.0)
+Data(id=null, speed=0.81, altitude=286.85, longitude=20.025, latitude=50.0799, temperature=24.36, time=2022-04-05T22:07:56.450871, rssi=-51.0)
+Data(id=null, speed=0.04, altitude=286.42, longitude=20.025, latitude=50.08, temperature=24.43, time=2022-04-05T22:08:57.451325, rssi=-53.0)
+Data(id=null, speed=0.19, altitude=286.66, longitude=20.0251, latitude=50.0799, temperature=24.4, time=2022-04-05T22:09:58.485750, rssi=-51.0)
+Data(id=null, speed=0.36, altitude=286.09, longitude=20.0251, latitude=50.0799, temperature=24.38, time=2022-04-05T22:10:59.519980, rssi=-51.0)
+Data(id=null, speed=0.12, altitude=285.99, longitude=20.025, latitude=50.08, temperature=24.37, time=2022-04-05T22:13:01.594734, rssi=-53.0)
+Data(id=null, speed=0.16, altitude=286.64, longitude=20.0249, latitude=50.08, temperature=24.38, time=2022-04-05T22:14:02.617273, rssi=-51.0)
+Data(id=null, speed=0.06, altitude=286.1, longitude=20.025, latitude=50.08, temperature=24.4, time=2022-04-05T22:15:03.631192, rssi=-49.0)
+Data(id=null, speed=0.08, altitude=286.99, longitude=20.0251, latitude=50.0798, temperature=24.35, time=2022-04-05T22:16:04.680108, rssi=-51.0)
+Data(id=null, speed=0.18, altitude=286.35, longitude=20.025, latitude=50.08, temperature=24.43, time=2022-04-05T22:17:05.715828, rssi=-49.0)
+Data(id=null, speed=0.09, altitude=287.13, longitude=20.025, latitude=50.08, temperature=24.38, time=2022-04-05T22:18:06.749507, rssi=-49.0)
+Data(id=null, speed=0.12, altitude=286.23, longitude=20.0251, latitude=50.0799, temperature=24.39, time=2022-04-05T22:19:07.746158, rssi=-51.0)
+2022-04-05 22:19:51.917  INFO 8291 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 108 total, 6 closed abnormally (6 connect failure, 0 send limit, 13 transport error)], stompSubProtocol[processed CONNECT(98)-CONNECTED(98)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 903], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 985], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 4, completed tasks = 6281]
+Data(id=null, speed=0.04, altitude=286.69, longitude=20.0251, latitude=50.0799, temperature=24.41, time=2022-04-05T22:20:08.784388, rssi=-51.0)
+Data(id=null, speed=0.25, altitude=286.89, longitude=20.0251, latitude=50.0799, temperature=24.45, time=2022-04-05T22:21:09.793808, rssi=-51.0)
+Data(id=null, speed=0.21, altitude=287.24, longitude=20.0251, latitude=50.0799, temperature=24.39, time=2022-04-05T22:22:10.841300, rssi=-53.0)
+Data(id=null, speed=0.17, altitude=287.98, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T22:23:11.815725, rssi=-51.0)
+Data(id=null, speed=0.57, altitude=287.41, longitude=20.0249, latitude=50.08, temperature=24.45, time=2022-04-05T22:24:12.825836, rssi=-49.0)
+Data(id=null, speed=0.05, altitude=287.5, longitude=20.0249, latitude=50.0801, temperature=24.41, time=2022-04-05T22:26:14.857763, rssi=-53.0)
+Data(id=null, speed=0.63, altitude=287.62, longitude=20.0249, latitude=50.08, temperature=24.4, time=2022-04-05T22:27:15.881535, rssi=-51.0)
+Data(id=null, speed=0.2, altitude=287.71, longitude=20.0249, latitude=50.0801, temperature=24.39, time=2022-04-05T22:28:16.895661, rssi=-49.0)
+Data(id=null, speed=0.2, altitude=287.1, longitude=20.0248, latitude=50.0801, temperature=24.37, time=2022-04-05T22:29:17.898517, rssi=-51.0)
+Data(id=null, speed=0.23, altitude=287.19, longitude=20.0248, latitude=50.0801, temperature=24.42, time=2022-04-05T22:30:18.900204, rssi=-51.0)
+Data(id=null, speed=0.04, altitude=287.96, longitude=20.0249, latitude=50.0801, temperature=24.41, time=2022-04-05T22:31:19.923678, rssi=-49.0)
+Data(id=null, speed=0.27, altitude=287.51, longitude=20.0248, latitude=50.0801, temperature=24.43, time=2022-04-05T22:32:20.905989, rssi=-51.0)
+Data(id=null, speed=0.4, altitude=287.0, longitude=20.025, latitude=50.08, temperature=24.33, time=2022-04-05T22:33:21.919826, rssi=-51.0)
+Data(id=null, speed=0.29, altitude=287.22, longitude=20.0248, latitude=50.0801, temperature=24.38, time=2022-04-05T22:34:22.995683, rssi=-51.0)
+Data(id=null, speed=0.11, altitude=286.92, longitude=20.0249, latitude=50.0801, temperature=24.4, time=2022-04-05T22:35:23.970736, rssi=-49.0)
+Data(id=null, speed=0.43, altitude=286.84, longitude=20.0248, latitude=50.0801, temperature=24.33, time=2022-04-05T22:36:24.980560, rssi=-51.0)
+Data(id=null, speed=0.12, altitude=287.15, longitude=20.0248, latitude=50.0801, temperature=24.36, time=2022-04-05T22:37:26.020134, rssi=-51.0)
+Data(id=null, speed=0.34, altitude=286.88, longitude=20.0248, latitude=50.0801, temperature=24.39, time=2022-04-05T22:38:27.010169, rssi=-49.0)
+Data(id=null, speed=0.57, altitude=287.57, longitude=20.0249, latitude=50.08, temperature=24.42, time=2022-04-05T22:39:28.034861, rssi=-51.0)
+Data(id=null, speed=0.6, altitude=287.5, longitude=20.0249, latitude=50.0801, temperature=24.36, time=2022-04-05T22:40:29.048251, rssi=-51.0)
+Data(id=null, speed=0.69, altitude=286.68, longitude=20.0248, latitude=50.0801, temperature=24.39, time=2022-04-05T22:41:30.038546, rssi=-49.0)
+Data(id=null, speed=0.16, altitude=286.8, longitude=20.0249, latitude=50.08, temperature=24.36, time=2022-04-05T22:42:31.072381, rssi=-53.0)
+Data(id=null, speed=0.26, altitude=286.66, longitude=20.0248, latitude=50.0801, temperature=24.38, time=2022-04-05T22:43:32.060873, rssi=-51.0)
+Data(id=null, speed=0.48, altitude=287.25, longitude=20.0248, latitude=50.0801, temperature=24.42, time=2022-04-05T22:44:33.072639, rssi=-51.0)
+Data(id=null, speed=0.29, altitude=286.26, longitude=20.025, latitude=50.0798, temperature=24.37, time=2022-04-05T22:45:34.089369, rssi=-51.0)
+Data(id=null, speed=0.16, altitude=286.48, longitude=20.0249, latitude=50.08, temperature=24.44, time=2022-04-05T22:46:35.121975, rssi=-51.0)
+Data(id=null, speed=0.12, altitude=287.19, longitude=20.0249, latitude=50.0801, temperature=24.35, time=2022-04-05T22:47:36.134891, rssi=-51.0)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  09:28 h
+[[1;34mINFO[m] Finished at: 2022-04-05T22:47:48Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:2.6.5:run[m [1m(default-cli)[m on project [36mhabsat_backend[m: [1;31mApplication finished with exit code: 137[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

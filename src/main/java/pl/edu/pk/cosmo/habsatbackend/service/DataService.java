@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 import pl.edu.pk.cosmo.habsatbackend.entity.Data;
+import pl.edu.pk.cosmo.habsatbackend.exception.NoDataException;
 import pl.edu.pk.cosmo.habsatbackend.repository.DataRepository;
 
 import javax.transaction.Transactional;
@@ -50,17 +51,37 @@ public class DataService {
         dataRepository.deleteAll();
     }
 
-    // Only for previous purposes
-//    private Data generateRandomData() {
-//        final Random random = new Random();
-//        final Data data = new Data();
-//        String[] ns = {"N", "S"};
-//        String[] ew = {"E", "W"};
-//        data.setSpeed(random.nextDouble());
-//        data.setAltitude(random.nextDouble());
-//        data.setTemperature(random.nextDouble());
-//        data.setLongitude(random.nextDouble()*100 + ew[random.nextInt(ew.length)]);
-//        data.setLatitude(qrandom.nextDouble()*100 + ns[random.nextInt(ns.length)]);
-//        return data;
-//    }
+    public void saveAll(List<Data> list) {
+        dataRepository.saveAll(list);
+    }
+
+    public void changeData(Data newData, Long id) throws NoDataException {
+        if(!dataRepository.existsById(id))
+            throw new NoDataException("There is no data with given id: " + id);
+
+        Data data = dataRepository.findById(id).get();
+        data.setTemperature(newData.getTemperature() != null ? newData.getTemperature() : data.getTemperature());
+        data.setAltitude(newData.getAltitude() != null ? newData.getAltitude() : data.getAltitude());
+        data.setLongitude(newData.getLongitude() != null ? newData.getLongitude() : data.getLongitude());
+        data.setLatitude(newData.getLatitude() != null ? newData.getLatitude() : data.getLatitude());
+        data.setRssi(newData.getRssi() != null ? newData.getRssi() : data.getRssi());
+        data.setSpeed(newData.getSpeed() != null ? newData.getSpeed() : data.getSpeed());
+        data.setTime(newData.getTime() != null ? newData.getTime() : data.getTime());
+
+        dataRepository.save(data);
+    }
+
+    public Data findById(Long id) throws NoDataException {
+        if(!dataRepository.existsById(id))
+            throw new NoDataException("There is no data with given id: " + id);
+
+        return dataRepository.findById(id).get();
+    }
+
+    public void deleteById(Long id) throws NoDataException {
+        if(!dataRepository.existsById(id))
+            throw new NoDataException("There is no data with given id: " + id);
+
+        dataRepository.deleteById(id);
+    }
 }

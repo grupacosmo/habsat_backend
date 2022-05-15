@@ -1,17 +1,14 @@
 spring:
-  h2:
-    console:
-      enabled: false
   datasource:
-    password: 'password'
-    username: 'admin'
-    url: 'jdbc:h2:file:./db'
-  flyway:
-    enabled: true
-    baseline-on-migrate: true
+    password: 'habsat'
+    username: 'habsat'
+    url: 'jdbc:postgresql://146.59.17.124:5432/db'
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+server:
+  error:
+    include-message: always

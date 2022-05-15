@@ -1,5 +1,5 @@
 # habsat_backend mappings map
-<strong>Add frame </strong>
+<strong>Add frame </strong><br>
 post under /data-frame with data frame obj in body
 <hr>
 <strong>Add frames </strong><br>

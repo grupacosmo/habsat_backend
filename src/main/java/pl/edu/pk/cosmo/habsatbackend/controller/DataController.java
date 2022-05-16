@@ -28,7 +28,7 @@ public class DataController {
     }
 
     @PostMapping("/list")
-    public ResponseEntity<?> saveAll(@RequestBody @Valid final List<Data> list) {
+    public ResponseEntity<?> saveAll(@RequestBody List<Data> list) {
             dataService.saveAll(list);
         return ResponseEntity.ok().build();
     }

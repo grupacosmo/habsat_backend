@@ -16,7 +16,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessagingException;
-import pl.edu.pk.cosmo.habsatbackend.entity.Data;
+import pl.edu.pk.cosmo.habsatbackend.entity.FlightData;
 import pl.edu.pk.cosmo.habsatbackend.service.DataService;
 
 import java.time.LocalDateTime;
@@ -91,17 +91,17 @@ public class MQTTConfiguration {
                 "rssi":-51
                 "decoded_payload":{"text":"209.85;50.08;20.03;1.22;18.10"}
                  */
-                final Data dataToDb = new Data();
-                dataToDb.setAltitude(Double.valueOf(mainData.get(0).substring(0)));
-                dataToDb.setLatitude(Double.valueOf(mainData.get(1)));
-                dataToDb.setLongitude(Double.valueOf(mainData.get(2)));
-                dataToDb.setSpeed(Double.valueOf(mainData.get(3).substring(0, mainData.get(4).length()-1)));
-                dataToDb.setTemperature(Double.valueOf(mainData.get(4)));
-                dataToDb.setRssi(Double.valueOf(rssi));
-                dataToDb.setTime(LocalDateTime.now());
+                final FlightData flightDataToDb = new FlightData();
+                flightDataToDb.setAltitude(Double.valueOf(mainData.get(0).substring(0)));
+                flightDataToDb.setLatitude(Double.valueOf(mainData.get(1)));
+                flightDataToDb.setLongitude(Double.valueOf(mainData.get(2)));
+                flightDataToDb.setSpeed(Double.valueOf(mainData.get(3).substring(0, mainData.get(4).length()-1)));
+                flightDataToDb.setTemperature(Double.valueOf(mainData.get(4)));
+                flightDataToDb.setRssi(Double.valueOf(rssi));
+                flightDataToDb.setTime(LocalDateTime.now());
 
-                System.out.println(dataToDb);
-                dataService.sendFrame(dataToDb);
+                System.out.println(flightDataToDb);
+                dataService.sendFrame(flightDataToDb);
             }
         };
     }

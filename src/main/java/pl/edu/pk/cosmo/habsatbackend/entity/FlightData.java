@@ -1,34 +1,41 @@
 package pl.edu.pk.cosmo.habsatbackend.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name="data")
+@Table(name="data_test")
 @lombok.Data
-public class Data {
+@NoArgsConstructor
+@AllArgsConstructor
+public class FlightData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @Column(nullable = false)
-    Double speed;
+    private Double speed;
 
     @Column(nullable = false)
-    Double altitude;
+    private Double altitude;
 
     @Column(nullable = false)
-    Double longitude;
+    private Double longitude;
 
     @Column(nullable = false)
-    Double latitude;
+    private Double latitude;
 
     @Column(nullable = false)
-    Double temperature;
+    private Double temperature;
 
     @Column(nullable = false)
-    LocalDateTime time;
+    private LocalDateTime time;
 
     @Column(nullable = false)
-    Double rssi;
+    private Double rssi;
+
+    private int flight_id;
 }

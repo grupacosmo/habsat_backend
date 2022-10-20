@@ -1,11 +1,12 @@
 package pl.edu.pk.cosmo.habsatbackend.service;
 
+import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
-import pl.edu.pk.cosmo.habsatbackend.entity.Data;
+import pl.edu.pk.cosmo.habsatbackend.entity.FlightData;
 import pl.edu.pk.cosmo.habsatbackend.exception.NoDataException;
 import pl.edu.pk.cosmo.habsatbackend.repository.DataRepository;
 
@@ -13,36 +14,31 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class DataService {
     final DataRepository dataRepository;
     final SimpMessagingTemplate simpMessagingTemplate;
     final JdbcTemplate jdbcTemplate;
-    final Logger logger = LoggerFactory.getLogger(DataService.class);
+    final static Logger logger = LoggerFactory.getLogger(DataService.class);
 
-    public DataService(final DataRepository dataRepository, final SimpMessagingTemplate simpMessagingTemplate, final JdbcTemplate jdbcTemplate) {
-        this.dataRepository = dataRepository;
-        this.simpMessagingTemplate = simpMessagingTemplate;
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
-    public void save(final Data data) {
-        dataRepository.save(data);
+    public void save(final FlightData flightData) {
+        dataRepository.save(flightData);
     }
 
     @Transactional
-    public void sendFrame(final Data data) {
-        jdbcTemplate.update("INSERT INTO DATA(SPEED, ALTITUDE, LONGITUDE, LATITUDE,TEMPERATURE, TIME, RSSI) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                data.getSpeed(),
-                data.getAltitude(),
-                data.getLongitude(),
-                data.getLatitude(),
-                data.getTemperature(),
-                data.getTime(),
-                data.getRssi());
-        simpMessagingTemplate.convertAndSend("/data/ws", data);
+    public void sendFrame(final FlightData flightData) {
+        jdbcTemplate.update("INSERT INTO data_test(SPEED, ALTITUDE, LONGITUDE, LATITUDE,TEMPERATURE, TIME, RSSI) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                flightData.getSpeed(),
+                flightData.getAltitude(),
+                flightData.getLongitude(),
+                flightData.getLatitude(),
+                flightData.getTemperature(),
+                flightData.getTime(),
+                flightData.getRssi());
+        simpMessagingTemplate.convertAndSend("/data/ws", flightData);
     }
 
-    public List<Data> findAll() {
+    public List<FlightData> findAll() {
         return dataRepository.findAll();
     }
 
@@ -51,27 +47,27 @@ public class DataService {
         dataRepository.deleteAll();
     }
 
-    public void saveAll(List<Data> list) {
+    public void saveAll(List<FlightData> list) {
         dataRepository.saveAll(list);
     }
 
-    public void changeData(Data newData, Long id) throws NoDataException {
+    public void changeData(FlightData newFlightData, Long id) throws NoDataException {
         if(!dataRepository.existsById(id))
             throw new NoDataException("There is no data with given id: " + id);
 
-        Data data = dataRepository.findById(id).get();
-        data.setTemperature(newData.getTemperature() != null ? newData.getTemperature() : data.getTemperature());
-        data.setAltitude(newData.getAltitude() != null ? newData.getAltitude() : data.getAltitude());
-        data.setLongitude(newData.getLongitude() != null ? newData.getLongitude() : data.getLongitude());
-        data.setLatitude(newData.getLatitude() != null ? newData.getLatitude() : data.getLatitude());
-        data.setRssi(newData.getRssi() != null ? newData.getRssi() : data.getRssi());
-        data.setSpeed(newData.getSpeed() != null ? newData.getSpeed() : data.getSpeed());
-        data.setTime(newData.getTime() != null ? newData.getTime() : data.getTime());
+        FlightData flightData = dataRepository.findById(id).get();
+        flightData.setTemperature(newFlightData.getTemperature() != null ? newFlightData.getTemperature() : flightData.getTemperature());
+        flightData.setAltitude(newFlightData.getAltitude() != null ? newFlightData.getAltitude() : flightData.getAltitude());
+        flightData.setLongitude(newFlightData.getLongitude() != null ? newFlightData.getLongitude() : flightData.getLongitude());
+        flightData.setLatitude(newFlightData.getLatitude() != null ? newFlightData.getLatitude() : flightData.getLatitude());
+        flightData.setRssi(newFlightData.getRssi() != null ? newFlightData.getRssi() : flightData.getRssi());
+        flightData.setSpeed(newFlightData.getSpeed() != null ? newFlightData.getSpeed() : flightData.getSpeed());
+        flightData.setTime(newFlightData.getTime() != null ? newFlightData.getTime() : flightData.getTime());
 
-        dataRepository.save(data);
+        dataRepository.save(flightData);
     }
 
-    public Data findById(Long id) throws NoDataException {
+    public FlightData findById(Long id) throws NoDataException {
         if(!dataRepository.existsById(id))
             throw new NoDataException("There is no data with given id: " + id);
 
